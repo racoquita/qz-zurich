@@ -1,0 +1,52 @@
+@-webkit-keyframes arrowmove { 10% { right: 5.09259%; }
+  49% { right: 2.31481481481%; }
+  50% { right: 2.31481481481%; }
+  100% { right: 5.09259%; } }
+
+@-moz-keyframe arrowmove { 10% { right: 5.09259%; }
+  49% { right: 2.31481481481%; }
+  50% { right: 2.31481481481%; }
+  100% { right: 5.09259%; } }
+
+@-o-keyframes arrowmove { 10% { right: 5.09259%; }
+  49% { right: 2.31481481481%; }
+  50% { right: 2.31481481481%; }
+  100% { right: 5.09259%; } }
+
+@-ms-keyframes arrowmove { 10% { right: 5.09259%; }
+  49% { right: 2.31481481481%; }
+  50% { right: 2.31481481481%; }
+  100% { right: 5.09259%; } }
+
+@keyframes arrowmove { 10% { right: 5.09259%; }
+  49% { right: 2.31481481481%; }
+  50% { right: 2.31481481481%; }
+  100% { right: 5.09259%; } }
+
+@-webkit-keyframes bgmove { 0% { -webkit-transform: scale(1) translate3d(-258px, -384px, 0); }
+  100% { -webkit-transform: scale(0.345) translate3d(-95%, -2887px, 0); } }
+
+#qzad { min-width: 720px; max-width: 1100px; height: 480px; position: relative; top: 0; left: 0; border: 1px solid #D8D8D8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.no-flicker { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform-style: preserve-3d; }
+
+.bg-container { position: absolute; top: 0; left: 0; height: 2327px; width: 3104px; background-image: url("../img/f1-pic.jpg"); -webkit-transform: scale(1) translate3d(-258px, -384px, 1px); -moz-transform: scale(1) translate3d(-258px, -384px, 1px); -ms-transform: scale(1) translate3d(-258px, -384px, 1px); transform: scale(1) translate3d(-258px, -384px, 1px); -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.bg-container.anim { position: inherit; top: 0; bottom: 0; left: 0; right: 0; background-repeat: no-repeat; -webkit-transform: scale(0.345) translate3d(-95%, -2887px, 1px); -moz-transform: scale(0.345) translate3d(-95%, -2887px, 1px); -ms-transform: scale(0.345) translate3d(-95%, -2887px, 1px); transform: scale(0.345) translate3d(-95%, -2887px, 1px); -webkit-backface-visibility: hidden; -webkit-perspective: 1000; perspective: 1000; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; }
+
+.frames-container { position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; overflow: hidden; -webkit-transition: all 1.5s ease-in-out; -moz-transition: all 1.5s ease-in-out; -ms-transition: all 1.5s ease-in-out; -o-transition: all 1.5s ease-in-out; transition: all 1.5s ease-in-out; }
+.frames-container a { display: block; text-decoration: none; }
+.frames-container img { display: block; width: 100%; border: 0; }
+.frames-container .logo { position: absolute; right: 0%; bottom: 20px; width: 16.6351606805%; max-width: 176px; min-width: 113px; }
+.frames-container .frames { position: inherit; bottom: 0; left: 0; right: 0; top: 0; }
+.frames-container .frames .copy { position: inherit; top: 20px; left: 2%; }
+.frames-container .frames.f2, .frames-container .frames.f3, .frames-container .frames.f4 { display: none; }
+.frames-container .frames.f1 .copy { width: 37.9017013233%; max-width: 401px; min-width: 357px; }
+.frames-container .frames.f2 .copy { width: 26.843100189%; max-width: 284px; min-width: 227px; }
+.frames-container .frames.f3 .copy { width: 39.224952741%; max-width: 415px; min-width: 327px; }
+.frames-container .frames.f4 .copy { top: 85px; width: 45.652173913%; max-width: 483px; min-width: 380px; }
+.frames-container .frames.f4 .cta { background: #094f9f; position: relative; top: 381px; bottom: 20px; height: 37px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; left: 2%; width: 20.415879017%; max-width: 216px; min-width: 200px; }
+.frames-container .frames.f4 .cta img { display: block; vertical-align: middle; }
+.frames-container .frames.f4 .cta span { position: absolute; }
+.frames-container .frames.f4 .cta .cta-text { top: 10px; left: 5.09259259259%; display: inline-block; width: 78.2407407407%; max-width: 169px; height: 17px; }
+.frames-container .frames.f4 .cta .arrow { top: 8px; right: 5.09259259259%; display: inline-block; width: 5.55555555556%; max-width: 12px; height: 19px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; transition: all 0.4s ease; }
+.frames-container .frames.f4 .cta .arrow.move { -webkit-animation: arrowmove 0.4s forwards 1s; -moz-animation: arrowmove 0.4s forwards 1s; -ms-animation: arrowmove 0.4s forwards 1s; animation: arrowmove 0.4s forwards 1s; }
