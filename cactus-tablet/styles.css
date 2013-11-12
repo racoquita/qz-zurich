@@ -1,0 +1,449 @@
+﻿body{
+vertical-align:baseline;
+border:0	outline: 0;
+padding:0;
+margin:0;
+color:#fff;
+background-color:#ffffff;
+width:480px;
+height:550px;
+overflow:hidden;
+}
+#container{
+position:relative;
+width:480px;
+height:550px;
+box-sizing:border-box;
+outline:1px solid #080369;
+border:12px solid #fff;
+background-color:#fff;
+overflow:hidden;
+cursor:pointer;
+}
+.background{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+left:-22px;
+background-image:url(images/bg.jpg);
+}
+.mask4{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 5s forwards;
+   -moz-animation:appear 1s linear 5s forwards;
+    -ms-animation:appear 1s linear 5s forwards;
+     -o-animation:appear 1s linear 5s forwards;
+        animation:appear 1s linear 5s forwards;
+background-image:url(images/mask4.png);
+}
+.mask1{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 5.25s forwards;
+   -moz-animation:appear 1s linear 5.25s forwards;
+    -ms-animation:appear 1s linear 5.25s forwards;
+     -o-animation:appear 1s linear 5.25s forwards;
+        animation:appear 1s linear 5.25s forwards;
+background-image:url(images/mask1.png);
+}
+.mask3{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 5.5s forwards;
+   -moz-animation:appear 1s linear 5.5s forwards;
+    -ms-animation:appear 1s linear 5.5s forwards;
+     -o-animation:appear 1s linear 5.5s forwards;
+        animation:appear 1s linear 5.5s forwards;
+background-image:url(images/mask3.png);
+}
+.mask9{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 5.75s forwards;
+   -moz-animation:appear 1s linear 5.75s forwards;
+    -ms-animation:appear 1s linear 5.75s forwards;
+     -o-animation:appear 1s linear 5.75s forwards;
+        animation:appear 1s linear 5.75s forwards;
+background-image:url(images/mask9.png);
+}
+.mask7{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 6s forwards;
+   -moz-animation:appear 1s linear 6s forwards;
+    -ms-animation:appear 1s linear 6s forwards;
+     -o-animation:appear 1s linear 6s forwards;
+        animation:appear 1s linear 6s forwards;
+background-image:url(images/mask7.png);
+}
+.mask2{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 6.25s forwards;
+   -moz-animation:appear 1s linear 6.25s forwards;
+    -ms-animation:appear 1s linear 6.25s forwards;
+     -o-animation:appear 1s linear 6.25s forwards;
+        animation:appear 1s linear 6.25s forwards;
+background-image:url(images/mask2.png);
+}
+.mask8{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 6.5s forwards;
+   -moz-animation:appear 1s linear 6.5s forwards;
+    -ms-animation:appear 1s linear 6.5s forwards;
+     -o-animation:appear 1s linear 6.5s forwards;
+        animation:appear 1s linear 6.5s forwards;
+background-image:url(images/mask8.png);
+}
+.mask6{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 6.75s forwards;
+   -moz-animation:appear 1s linear 6.75s forwards;
+    -ms-animation:appear 1s linear 6.75s forwards;
+     -o-animation:appear 1s linear 6.75s forwards;
+        animation:appear 1s linear 6.75s forwards;
+background-image:url(images/mask6.png);
+}
+.mask5{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+opacity:0;
+left:-22px;
+/*animation*/
+-webkit-animation:appear 1s linear 7s forwards;
+   -moz-animation:appear 1s linear 7s forwards;
+    -ms-animation:appear 1s linear 7s forwards;
+     -o-animation:appear 1s linear 7s forwards;
+        animation:appear 1s linear 7s forwards;
+background-image:url(images/mask5.png);
+}
+.logo{
+position:absolute;
+bottom:5px;
+right:0px;
+}
+.c1{
+position:absolute;
+left:10px;
+top:10px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4.5s forwards;
+   -moz-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4.5s forwards;
+    -ms-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4.5s forwards;
+     -o-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4.5s forwards;
+        animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4.5s forwards;
+}
+.c2{
+position:absolute;
+left:10px;
+top:10px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 7.5s forwards,                       fadeOut 1s linear 10.5s forwards;
+   -moz-animation:fadeIn 1s linear 7.5s forwards,                       fadeOut 1s linear 10.5s forwards;
+    -ms-animation:fadeIn 1s linear 7.5s forwards,                       fadeOut 1s linear 10.5s forwards;
+     -o-animation:fadeIn 1s linear 7.5s forwards,                       fadeOut 1s linear 10.5s forwards;
+        animation:fadeIn 1s linear 7.5s forwards,                       fadeOut 1s linear 10.5s forwards;
+}
+.zurich{
+position:absolute;
+width:202px;
+height:23px;
+left:10px;
+top:5px;
+opacity:0;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+/*transform*/
+-webkit-transform:scale(0.9,0.9);
+   -moz-transform:scale(0.9,0.9);
+    -ms-transform:scale(0.9,0.9);
+     -o-transform:scale(0.9,0.9);
+        transform:scale(0.9,0.9);
+/*animation*/
+-webkit-animation:fadeIn 1s linear 11s forwards;
+   -moz-animation:fadeIn 1s linear 11s forwards;
+    -ms-animation:fadeIn 1s linear 11s forwards;
+     -o-animation:fadeIn 1s linear 11s forwards;
+        animation:fadeIn 1s linear 11s forwards;
+}
+.tagline{
+position:absolute;
+width:202px;
+height:62px;
+left:10px;
+top:42px;
+opacity:0;
+/*transform*/
+-webkit-transform:scale(0.9,0.9);
+   -moz-transform:scale(0.9,0.9);
+    -ms-transform:scale(0.9,0.9);
+     -o-transform:scale(0.9,0.9);
+        transform:scale(0.9,0.9);
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 12s forwards;
+   -moz-animation:fadeIn 1s linear 12s forwards;
+    -ms-animation:fadeIn 1s linear 12s forwards;
+     -o-animation:fadeIn 1s linear 12s forwards;
+        animation:fadeIn 1s linear 12s forwards;
+}
+.cta{
+position:absolute;
+left:9px;
+bottom:5px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 12s forwards;
+   -moz-animation:fadeIn 1s linear 12s forwards;
+    -ms-animation:fadeIn 1s linear 12s forwards;
+     -o-animation:fadeIn 1s linear 12s forwards;
+        animation:fadeIn 1s linear 12s forwards;
+}
+.arrow{
+position:absolute;
+left:180px;
+bottom:12px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 12s forwards,					   arrowmove 0.4s linear 12s 3 forwards;
+   -moz-animation:fadeIn 1s linear 12s forwards,					   arrowmove 0.4s linear 12s 3 forwards;
+    -ms-animation:fadeIn 1s linear 12s forwards,					   arrowmove 0.4s linear 12s 3 forwards;
+     -o-animation:fadeIn 1s linear 12s forwards,					   arrowmove 0.4s linear 12s 3 forwards;
+        animation:fadeIn 1s linear 12s forwards,					   arrowmove 0.4s linear 12s 3 forwards;
+}
+ 
+ 
+/* Keyframes Start */ 
+
+@-webkit-keyframes loop{
+	0% {opacity: 0;}
+	1% {opacity: 1;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes bgscale{
+	
+	0% { -webkit-transform: scale(1,1) ;}
+	50% { -webkit-transform: scale(1,1);}
+
+100% { -webkit-transform: scale(0.5,0.5) translate(-320px, 260px);}
+		
+}
+@-webkit-keyframes appear{ 
+    0% { opacity:0; }
+	1% { opacity:1; } 
+    100% { opacity:1; } 
+
+}
+@-moz-keyframes appear{ 
+    0% { opacity:0; }
+	1% { opacity:1; } 
+    100% { opacity:1; } 
+
+}
+@-ms-keyframes appear{ 
+    0% { opacity:0; }
+	1% { opacity:1; } 
+    100% { opacity:1; } 
+
+}
+@-o-keyframes appear{ 
+    0% { opacity:0; }
+	1% { opacity:1; } 
+    100% { opacity:1; } 
+
+}
+@-o-keyframes appear{ 
+    0% { opacity:0; }
+	1% { opacity:1; } 
+    100% { opacity:1; } 
+
+}
+@keyframes appear{ 
+    0% { opacity:0; }
+	1% { opacity:1; } 
+    100% { opacity:1; } 
+
+}
+@-webkit-keyframes fadeIn{ 
+    0% { opacity:0; } 
+    25% { opacity:1; } 
+    26% { opacity:1; } 
+    27% { opacity:1; } 
+    28% { opacity:1; } 
+    29% { opacity:1; } 
+    30% { opacity:1; } 
+    31% { opacity:1; } 
+    32% { opacity:1; } 
+    33% { opacity:1; } 
+    34% { opacity:1; } 
+    35% { opacity:1; }
+    50% { opacity:1; } 
+    75% { opacity:1; } 
+    100% { opacity:1; } 
+
+}   
+@-webkit-keyframes fadeOut{ 
+    0% { opacity:1; } 
+    25% { opacity:0; } 
+    26% { opacity:0; } 
+    27% { opacity:0; } 
+    28% { opacity:0; } 
+    29% { opacity:0; } 
+    30% { opacity:0; } 
+    31% { opacity:0; } 
+    32% { opacity:0; } 
+    33% { opacity:0; } 
+    34% { opacity:0; } 
+    35% { opacity:0; }
+    50% { opacity:0; } 
+    75% { opacity:0; } 
+    100% { opacity:0; } 
+}
+@-webkit-keyframes arrowmove{
+	0% {left: 178px;}
+	49% {left: 184px;}
+	50% {left: 184px;}
+	100% {left: 178px;}
+}
+
+@keyframes loop{
+	0% {opacity: 0;}
+	1% {opacity: 1;}
+	100% {opacity: 1;}
+}
+@keyframes bgscale{
+	
+	0% { -webkit-transform: scale(1,1) ;}
+	50% { -webkit-transform: scale(1,1);}
+
+100% { -webkit-transform: scale(0.5,0.5) translate(-320px, 260px);}
+		
+}
+@keyframes fadeIn{ 
+    0% { opacity:0; } 
+    25% { opacity:1; } 
+    26% { opacity:1; } 
+    27% { opacity:1; } 
+    28% { opacity:1; } 
+    29% { opacity:1; } 
+    30% { opacity:1; } 
+    31% { opacity:1; } 
+    32% { opacity:1; } 
+    33% { opacity:1; } 
+    34% { opacity:1; } 
+    35% { opacity:1; }
+    50% { opacity:1; } 
+    75% { opacity:1; } 
+    100% { opacity:1; } 
+
+}   
+@keyframes fadeOut{ 
+    0% { opacity:1; } 
+    25% { opacity:0; } 
+    26% { opacity:0; } 
+    27% { opacity:0; } 
+    28% { opacity:0; } 
+    29% { opacity:0; } 
+    30% { opacity:0; } 
+    31% { opacity:0; } 
+    32% { opacity:0; } 
+    33% { opacity:0; } 
+    34% { opacity:0; } 
+    35% { opacity:0; }
+    50% { opacity:0; } 
+    75% { opacity:0; } 
+    100% { opacity:0; } 
+}
+@keyframes arrowmove{
+	0% {left: 178px;}
+	49% {left: 184px;}
+	50% {left: 184px;}
+	100% {left: 178px;}
+}

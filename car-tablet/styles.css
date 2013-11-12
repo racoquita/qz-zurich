@@ -1,0 +1,502 @@
+﻿body{
+vertical-align:baseline;
+border:0	outline: 0;
+padding:0;
+margin:0;
+color:#fff;
+background-color:#ffffff;
+width:480px;
+height:550px;
+overflow:hidden;
+}
+#container{
+position:relative;
+width:480px;
+height:550px;
+box-sizing:border-box;
+outline:1px solid #080369;
+border:10px solid #fff;
+background-color:#fff;
+overflow:hidden;
+cursor:pointer;
+}
+.background{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+/*animation*/
+-webkit-animation:appear 0.1s ease-in-out 0s forwards;
+   -moz-animation:appear 0.1s ease-in-out 0s forwards;
+    -ms-animation:appear 0.1s ease-in-out 0s forwards;
+     -o-animation:appear 0.1s ease-in-out 0s forwards;
+        animation:appear 0.1s ease-in-out 0s forwards;
+top:0px;
+opacity:0;
+background-image:url(images/bg1.jpg)
+}
+.background2{
+position:absolute;
+/*transform-origin*/
+-webkit-transform-origin:top left;
+   -moz-transform-origin:top left;
+    -ms-transform-origin:top left;
+     -o-transform-origin:top left;
+        transform-origin:top left;
+/*animation*/
+-webkit-animation:appear 0.1s ease-in-out 5s forwards;
+   -moz-animation:appear 0.1s ease-in-out 5s forwards;
+    -ms-animation:appear 0.1s ease-in-out 5s forwards;
+     -o-animation:appear 0.1s ease-in-out 5s forwards;
+        animation:appear 0.1s ease-in-out 5s forwards;
+top:0px;
+opacity:0;
+}
+.white{
+position:absolute;
+background:white;
+width:480px;
+height:550px;
+opacity:0;
+/*animation*/
+-webkit-animation:whitefade 1s ease-in-out 4.5s forwards;
+   -moz-animation:whitefade 1s ease-in-out 4.5s forwards;
+    -ms-animation:whitefade 1s ease-in-out 4.5s forwards;
+     -o-animation:whitefade 1s ease-in-out 4.5s forwards;
+        animation:whitefade 1s ease-in-out 4.5s forwards;
+}
+.logo{
+position:absolute;
+bottom:5px;
+right:0px;
+}
+.text1{
+position:absolute;
+left:8px;
+top:5px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4s forwards;
+   -moz-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4s forwards;
+    -ms-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4s forwards;
+     -o-animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4s forwards;
+        animation:fadeIn 1s linear 1s forwards,                       fadeOut 1s linear 4s forwards;
+}
+.text2{
+position:absolute;
+left:8px;
+top:5px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 6s forwards,                       fadeOut 1s linear 9s forwards;
+   -moz-animation:fadeIn 1s linear 6s forwards,                       fadeOut 1s linear 9s forwards;
+    -ms-animation:fadeIn 1s linear 6s forwards,                       fadeOut 1s linear 9s forwards;
+     -o-animation:fadeIn 1s linear 6s forwards,                       fadeOut 1s linear 9s forwards;
+        animation:fadeIn 1s linear 6s forwards,                       fadeOut 1s linear 9s forwards;
+}
+.zurich{
+position:absolute;
+width:202px;
+height:23px;
+left:8px;
+top:5px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 10s forwards;
+   -moz-animation:fadeIn 1s linear 10s forwards;
+    -ms-animation:fadeIn 1s linear 10s forwards;
+     -o-animation:fadeIn 1s linear 10s forwards;
+        animation:fadeIn 1s linear 10s forwards;
+}
+.tagline{
+position:absolute;
+width:202px;
+height:62px;
+left:8px;
+top:35px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 11s forwards;
+   -moz-animation:fadeIn 1s linear 11s forwards;
+    -ms-animation:fadeIn 1s linear 11s forwards;
+     -o-animation:fadeIn 1s linear 11s forwards;
+        animation:fadeIn 1s linear 11s forwards;
+}
+.cta{
+position:absolute;
+left:9px;
+bottom:5px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 11s forwards;
+   -moz-animation:fadeIn 1s linear 11s forwards;
+    -ms-animation:fadeIn 1s linear 11s forwards;
+     -o-animation:fadeIn 1s linear 11s forwards;
+        animation:fadeIn 1s linear 11s forwards;
+}
+.arrow{
+position:absolute;
+left:177px;
+bottom:14px;
+opacity:0;
+/*animation*/
+-webkit-animation:fadeIn 1s linear 11s forwards,					   arrowmove 0.4s linear 11s 3 forwards;
+   -moz-animation:fadeIn 1s linear 11s forwards,					   arrowmove 0.4s linear 11s 3 forwards;
+    -ms-animation:fadeIn 1s linear 11s forwards,					   arrowmove 0.4s linear 11s 3 forwards;
+     -o-animation:fadeIn 1s linear 11s forwards,					   arrowmove 0.4s linear 11s 3 forwards;
+        animation:fadeIn 1s linear 11s forwards,					   arrowmove 0.4s linear 11s 3 forwards;
+}
+/* Keyframes Start */ 
+@-webkit-keyframes whitefade{
+0% { opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+opacity:0;
+}
+}
+@-moz-keyframes whitefade{
+0% { opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+opacity:0;
+}
+}
+@-ms-keyframes whitefade{
+0% { opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+opacity:0;
+}
+}
+@-o-keyframes whitefade{
+0% { opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+opacity:0;
+}
+}
+@-webkit-keyframes appear{
+0% { opacity:0;
+}
+1%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}
+@-moz-keyframes appear{
+0% { opacity:0;
+}
+1%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}
+@-o-keyframes appear{
+0% { opacity:0;
+}
+1%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}
+@-ms-keyframes appear{
+0% { opacity:0;
+}
+1%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}
+@-webkit-keyframes loop{
+0% {opacity:0;
+}
+1%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}
+@-webkit-keyframes bgscale{
+0% { -webkit-transform:scale(1.3,1.3);
+}
+50%{
+/*transform*/
+-webkit-transform:scale(1.3,1.3);
+   -moz-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+     -o-transform:scale(1.3,1.3);
+        transform:scale(1.3,1.3);
+}
+100%{
+/*transform*/
+-webkit-transform:scale(0.52,0.52) translate(0px, 200px);
+   -moz-transform:scale(0.52,0.52) translate(0px, 200px);
+    -ms-transform:scale(0.52,0.52) translate(0px, 200px);
+     -o-transform:scale(0.52,0.52) translate(0px, 200px);
+        transform:scale(0.52,0.52) translate(0px, 200px);
+}
+}
+@-webkit-keyframes fadeIn{
+0% { opacity:0;
+}
+25%{
+opacity:1;
+}
+26%{
+opacity:1;
+}
+27%{
+opacity:1;
+}
+28%{
+opacity:1;
+}
+29%{
+opacity:1;
+}
+30%{
+opacity:1;
+}
+31%{
+opacity:1;
+}
+32%{
+opacity:1;
+}
+33%{
+opacity:1;
+}
+34%{
+opacity:1;
+}
+35%{
+opacity:1;
+}
+50%{
+opacity:1;
+}
+75%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}   
+@-webkit-keyframes fadeOut{
+0% { opacity:1;
+}
+25%{
+opacity:0;
+}
+26%{
+opacity:0;
+}
+27%{
+opacity:0;
+}
+28%{
+opacity:0;
+}
+29%{
+opacity:0;
+}
+30%{
+opacity:0;
+}
+31%{
+opacity:0;
+}
+32%{
+opacity:0;
+}
+33%{
+opacity:0;
+}
+34%{
+opacity:0;
+}
+35%{
+opacity:0;
+}
+50%{
+opacity:0;
+}
+75%{
+opacity:0;
+}
+100%{
+opacity:0;
+}
+}
+@-webkit-keyframes arrowmove{
+0% {left:177px;
+}
+49%{
+left:182px;
+}
+50%{
+left:182px;
+}
+100%{
+left:177px;
+}
+}
+
+@keyframes loop{
+0% {opacity:0;
+}
+1%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}
+@keyframes bgscale{
+0% { transform:scale(1.3,1.3);
+}
+50%{
+/*transform*/
+-webkit-transform:scale(1.3,1.3);
+   -moz-transform:scale(1.3,1.3);
+    -ms-transform:scale(1.3,1.3);
+     -o-transform:scale(1.3,1.3);
+        transform:scale(1.3,1.3);
+}
+100%{
+/*transform*/
+-webkit-transform:scale(0.52,0.52) translate(0px, 200px);
+   -moz-transform:scale(0.52,0.52) translate(0px, 200px);
+    -ms-transform:scale(0.52,0.52) translate(0px, 200px);
+     -o-transform:scale(0.52,0.52) translate(0px, 200px);
+        transform:scale(0.52,0.52) translate(0px, 200px);
+}
+}
+@keyframes fadeIn{
+0% { opacity:0;
+}
+25%{
+opacity:1;
+}
+26%{
+opacity:1;
+}
+27%{
+opacity:1;
+}
+28%{
+opacity:1;
+}
+29%{
+opacity:1;
+}
+30%{
+opacity:1;
+}
+31%{
+opacity:1;
+}
+32%{
+opacity:1;
+}
+33%{
+opacity:1;
+}
+34%{
+opacity:1;
+}
+35%{
+opacity:1;
+}
+50%{
+opacity:1;
+}
+75%{
+opacity:1;
+}
+100%{
+opacity:1;
+}
+}   
+@keyframes fadeOut{
+0% { opacity:1;
+}
+25%{
+opacity:0;
+}
+26%{
+opacity:0;
+}
+27%{
+opacity:0;
+}
+28%{
+opacity:0;
+}
+29%{
+opacity:0;
+}
+30%{
+opacity:0;
+}
+31%{
+opacity:0;
+}
+32%{
+opacity:0;
+}
+33%{
+opacity:0;
+}
+34%{
+opacity:0;
+}
+35%{
+opacity:0;
+}
+50%{
+opacity:0;
+}
+75%{
+opacity:0;
+}
+100%{
+opacity:0;
+}
+}
+@keyframes arrowmove{
+0% {left:172px;
+}
+49%{
+left:178px;
+}
+50%{
+left:172px;
+}
+100%{
+left:178px;
+}
