@@ -1,24 +1,16 @@
-﻿body{
+﻿#qzad{
 vertical-align:baseline;
-border:0	outline: 0;
 padding:0;
 margin:0;
 color:#fff;
-background-color:#ffffff;
-width:480px;
-height:550px;
-overflow:hidden;
-}
-#container{
+width:468px;
+height:538px;
 position:relative;
-width:480px;
-height:550px;
 box-sizing:border-box;
 outline:1px solid #080369;
 border:12px solid #fff;
 background-color:#fff;
 overflow:hidden;
-cursor:pointer;
 }
 .background{
 position:absolute;
@@ -30,6 +22,11 @@ position:absolute;
         transform-origin:top left;
 left:-22px;
 background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/bg.jpg);
+}
+.ad-container {
+    display: none;
+    position: relative;
+    height: 100%;
 }
 .mask4{
 position:absolute;

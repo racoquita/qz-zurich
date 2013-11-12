@@ -1,24 +1,20 @@
-﻿body{
+﻿#qzad{
 vertical-align:baseline;
-border:0	outline: 0;
 padding:0;
 margin:0;
 color:#fff;
-background-color:#ffffff;
-width:480px;
-height:550px;
-overflow:hidden;
-}
-#container{
 position:relative;
-width:480px;
-height:550px;
+width:470px;
+height:540px;
 box-sizing:border-box;
 outline:1px solid #080369;
 border:10px solid #fff;
 background-color:#fff;
 overflow:hidden;
-cursor:pointer;
+}
+.ad-container {
+  display: none;
+  height: 100%;
 }
 .background{
 position:absolute;
@@ -36,7 +32,7 @@ position:absolute;
         animation:appear 0.1s ease-in-out 0s forwards;
 top:0px;
 opacity:0;
-background-image:url(images/bg1.jpg)
+background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/car-tablet/images/bg1.jpg)
 }
 .background2{
 position:absolute;

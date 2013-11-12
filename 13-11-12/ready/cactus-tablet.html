@@ -1,7 +1,6 @@
 <style type="text/css">
-    body{vertical-align:baseline;border:0 outline:0;padding:0;margin:0;color:#fff;background-color:#fff;width:480px;height:550px;overflow:hidden}#qzad{position:relative;width:480px;height:550px;box-sizing:border-box;outline:1px solid #080369;border:12px solid #fff;background-color:#fff;overflow:hidden;cursor:pointer}
-    .background{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;left:-22px;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/bg.jpg)}
-    .mask4{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;opacity:0;left:-22px;-webkit-animation:appear 1s linear 5s forwards;-moz-animation:appear 1s linear 5s forwards;-ms-animation:appear 1s linear 5s forwards;-o-animation:appear 1s linear 5s forwards;animation:appear 1s linear 5s forwards;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask4.png)}
+    #qzad{vertical-align:baseline;padding:0;margin:0;color:#fff;width:468px;height:538px;position:relative;box-sizing:border-box;outline:1px solid #080369;border:12px solid #fff;background-color:#fff;overflow:hidden}.background{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;left:-22px;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/bg.jpg)}
+    .ad-container{display:none;position:relative;height:100%}.mask4{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;opacity:0;left:-22px;-webkit-animation:appear 1s linear 5s forwards;-moz-animation:appear 1s linear 5s forwards;-ms-animation:appear 1s linear 5s forwards;-o-animation:appear 1s linear 5s forwards;animation:appear 1s linear 5s forwards;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask4.png)}
     .mask1{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;opacity:0;left:-22px;-webkit-animation:appear 1s linear 5.25s forwards;-moz-animation:appear 1s linear 5.25s forwards;-ms-animation:appear 1s linear 5.25s forwards;-o-animation:appear 1s linear 5.25s forwards;animation:appear 1s linear 5.25s forwards;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask1.png)}
     .mask3{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;opacity:0;left:-22px;-webkit-animation:appear 1s linear 5.5s forwards;-moz-animation:appear 1s linear 5.5s forwards;-ms-animation:appear 1s linear 5.5s forwards;-o-animation:appear 1s linear 5.5s forwards;animation:appear 1s linear 5.5s forwards;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask3.png)}
     .mask9{position:absolute;-webkit-transform-origin:top left;-moz-transform-origin:top left;-ms-transform-origin:top left;-o-transform-origin:top left;transform-origin:top left;opacity:0;left:-22px;-webkit-animation:appear 1s linear 5.75s forwards;-moz-animation:appear 1s linear 5.75s forwards;-ms-animation:appear 1s linear 5.75s forwards;-o-animation:appear 1s linear 5.75s forwards;animation:appear 1s linear 5.75s forwards;background-image:url(http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask9.png)}
@@ -38,71 +37,66 @@
 <script src="http://app.qz.com/js/frameMessager/QZIX.js" type="text/javascript"></script>
 <script src="http://app.qz.com/js/frameMessager/frameMessager.js" type="text/javascript"></script>
 <script type="text/javascript">
-    var container;
-    var background;
+    var container, background;
 
-    startAd = function(){        
+    startAd = function(){    
+        $('.ad-container').show();
+
         container = document.getElementById('qzad');
         background = document.getElementById('background');
         addListeners();
         container.style.display = "block";
-    };
 
+        timer = setTimeout(function(){
+            $('.cta, .arrow').css({'cursor':'pointer'});
+        }, 12000);
+    };
+    resetAd = function() {
+        clearTimeout(timer);
+        $('.cta, .arrow').css({'cursor':'default'});
+        $('.ad-container').hide();
+    };
     addListeners = function () {
         container.addEventListener('click', bgExitHandler, false);
     };
-
     bgExitHandler = function (e) {
         Enabler.exit('exit URL');
     };
-
-    var removeClass = function(el, className){
+    removeClass = function(el, className){
         el.classList.remove(className);
     };
-
-    var i = 1;
-    var counter = setInterval(function() {
-        if (i <= 1) {
-            cloneAd();
-            startAd();
-            i++;
-        }
-    }, 17000);
-
-    function cloneAd() {
-        var elm = document.getElementById('qzad');
-        var newOne = elm.cloneNode(true);
-        elm.parentNode.replaceChild(newOne, elm);
-    };
-
     document.addEventListener('DOMContentLoaded',function(){
         QZAD.init({
-            el: document.getElementById('qzad'),
-            frameHeight: 550,
+            el: document.getElementById('qzad'), frameHeight: 550,
             App: { on: function() {startAd()}, off: function() {resetAd()}}
         });
     });
 </script>
 
-<div id="qzad">
-    <div class="background"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/bg.jpg" /></div>
-    <div class="mask1"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask1.png" /></div>
-    <div class="mask2"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask2.png" /></div>
-    <div class="mask3"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask3.png" /></div>
-    <div class="mask4"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask4.png" /></div>
-    <div class="mask5"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask5.png" /></div>
-    <div class="mask6"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask6.png" /></div>
-    <div class="mask7"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask7.png" /></div>
-    <div class="mask8"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask8.png" /></div>
-    <div class="mask9"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask9.png" /></div>
-    
-        
-	<div class="logo"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/logo.png" width="104"  height="74" alt="logo" /></div>
-	<div class="c1"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/c1.png" width="216" height="110" /></div>
-    <div class="c2"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/c2.png" width="216" height="110" /></div>
-                        
-    <div class="tagline"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/tagline.png" width="237" height="94" alt="tagline" /></div>  
-    <div class="zurich"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/zurich.png" width="309"  height="34" alt="zurich" /></div> 
-    <div class="cta"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/cta.png" width="218"  height="35" alt="cta" /></div>
-    <div class="arrow"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/arrow.png" width="21"  height="21" alt="arrow" /></div>
+<div id="qzad" class="fade">
+    <div class="ad-container">
+        <div class="background"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/bg.jpg" /></div>
+        <div class="mask1"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask1.png" /></div>
+        <div class="mask2"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask2.png" /></div>
+        <div class="mask3"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask3.png" /></div>
+        <div class="mask4"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask4.png" /></div>
+        <div class="mask5"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask5.png" /></div>
+        <div class="mask6"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask6.png" /></div>
+        <div class="mask7"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask7.png" /></div>
+        <div class="mask8"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask8.png" /></div>
+        <div class="mask9"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/mask9.png" /></div>
+    	
+    	<div class="c1"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/c1.png" width="216" height="110" /></div>
+        <div class="c2"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/c2.png" width="216" height="110" /></div>
+                            
+        <div class="tagline"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/tagline.png" width="237" height="94" alt="tagline" /></div>  
+        <div class="zurich"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/zurich.png" width="309"  height="34" alt="zurich" /></div> 
+        <a href="http://www.zurich.com/campaign/cxo/us/index.htm" class="cta ixtrack" target="_blank" data-ix-category="external" data-ix-label="link to primary cta">
+            <img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/cta.png" width="218"  height="35" alt="cta" />
+        </a>
+        <div class="arrow"><img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/arrow.png" width="21"  height="21" alt="arrow" /></div>
+    </div>
+    <a href="http://www.zurich.com/campaign/cxo/us/index.htm" class="logo ixtrack" target="_blank" data-ix-category="external" data-ix-label="logo">
+        <img src="http://ads.qz.com/sponsors/zurich/13-11-12/cactus-tablet/images/logo.png" width="104"  height="74" alt="logo" /></div>
+    </a>
 </div>
