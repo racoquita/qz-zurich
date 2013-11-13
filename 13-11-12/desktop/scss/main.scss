@@ -46,64 +46,41 @@
 	   -moz-box-sizing: border-box; 
 		    box-sizing: border-box;
 }
-.no-flicker{
-	// -webkit-backface-visibility: hidden;
-	// 	-moz-backface-visibility:hidden;
-	// 	 -ms-backface-visibility:hidden;
-	// 	  	 backface-visibility:hidden;
 
-	// 	-webkit-transform-style: preserve-3d;
-}
 .bg-container{
 		position:absolute;
 		top:0;
 		left:0;
+		right: 0;
+		bottom:0;
 		height: 2327px;
 		width: 3104px;
-		background-image: url("../img/f1-pic.jpg");
-		background-position: -258px -384px;
-		background-repeat:no-repeat;
-		// -webkit-transform: scale(1) translate3d(-258px,-384px,1px);
-		//    -moz-transform: scale(1) translate3d(-258px,-384px,1px);
-		//  	-ms-transform: scale(1) translate3d(-258px,-384px,1px);
-		//  		transform: scale(1) translate3d(-258px,-384px,1px);
+		background: url("../img/f1-pic.jpg") -258px -384px no-repeat;
+		background-size: 3104px;
 
-		-webkit-transform-origin: 50% 50%;
-			 	transform-origin: 50% 50%;
-
-	-webkit-transition: all 1s ease; 
-       -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-         -o-transition: all 1s ease;
-            transition: all 1s ease;
-
-
+	-webkit-transition: all 1s ease-in-out; 
+       -moz-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+           // transition: all 1s ease;
+		
 		&.anim{
-			position:inherit;
+
+			position:absolute;
 			top:0;
 			bottom:0;
 			left:0;
 			right: 0;
-		//	background-position: 9% 70%;
-			background-position: -95% 70%;
-			background-repeat:no-repeat;
-
-		 //   -webkit-transform: scale(0.345) translate3d(-95%,-2887px, 1px);
-			//   -moz-transform: scale(0.345) translate3d(-95%,-2887px, 1px);
-			//    -ms-transform: scale(0.345) translate3d(-95%,-2887px, 1px);
-			//        transform: scale(0.345) translate3d(-95%,-2887px, 1px);
-
-			// -webkit-backface-visibility: hidden;
-			
-			// -webkit-perspective: 1000;
-			// 	   	perspective: 1000;
-			
-			// -webkit-transform-style: preserve-3d;
-			// 		transform-style: preserve-3d;
-			
-			
+			background-position: -95% -233px;
+			background-repeat: no-repeat; 
+			background-size: 1070px;
+			 width: 100%;
+			// max-width: 1070px;
+			// min-width: 720px;
+			 height: 802px;
 		}
 	}
+
+
 .frames-container{
 	position:absolute;
 	top:20px;
@@ -111,7 +88,6 @@
 	right:20px;
 	bottom:20px;
 	overflow:hidden;
-	//border: 20px solid white;
 	-webkit-transition: all 1.5s ease-in-out;
 	   -moz-transition: all 1.5s ease-in-out;
 	    -ms-transition: all 1.5s ease-in-out;
