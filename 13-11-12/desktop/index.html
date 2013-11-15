@@ -17,9 +17,8 @@
 		
 		<div class="frames-container">
 			<div class="bg-container no-flicker">
-				<!-- <img src="img/f1-pic.jpg" alt="" id="bgImg" width="3104"> -->
-				<div id="bgImg"></div>
-				<!-- <img src="img/fork-lift.png" alt="" width="386" class="fork-lift"/>			 -->
+				<img src="img/f1-pic.jpg" alt="" id="bgImg" width="3104">
+				<img src="img/fork-lift.png" alt="" width="386" class="fork-lift"/>			
 			</div>
 
 			<div class="frames f1 no-flicker">
@@ -45,6 +44,7 @@
 	<script type="text/javascript" src="js/TweenLite.min.js"></script>
 	<script type="text/javascript" src="js/plugins/CSSPlugin.min.js"></script>
 	<script type="text/javascript" src="js/easing/EasePack.min.js"></script>
+	<script type="text/javascript" src="js/TimelineLite.min.js"> </script>
 
 	<script type="text/javascript">
 		var times = [3500, 3800, 2000];
@@ -58,16 +58,16 @@
 					//bgContainer.addClass('anim');
 					//bg.addClass('anim');
 					//bg = document.getElementById('bgImg');
-					TweenLite.to(forkLift, 0.25, {css:{ bottom:0, right:"19%", top:65, opacity: 1 } , delay: 0.5, width:"35.0909090909%"});
-					TweenLite.to(bg, 1, {left:0, top:"-223px", width:1070, ease: Power2.easeInOut, transformOrigin:"left top"});
+					var timeline = new TimelineLite();
 					
+					timeline.to(bg, 1,  { left:0, top:"-100px", width:1070, ease: Power2.easeInOut }, 0);
+					timeline.to( forkLift,1, {   top:65, right:"19%", left: "41.6363636364%" , opacity: 1, ease: Power2.easeInOut, width:"35.0909090909%"} , 0);
+					timeline.play();
 					
 					timeouts[1] = setTimeout(function() {
 						frame2.fadeIn(400);
 					}, 1500);
 				});
-			
-				// TweenLite.to(bg, 1, { scaleX:0.345, scaleY: 0.345, left:"9%", top:"-2887px"});
 			
 			},
 			function(){
