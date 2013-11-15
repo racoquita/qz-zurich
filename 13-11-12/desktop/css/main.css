@@ -26,10 +26,11 @@
 @-webkit-keyframes bgmove { 0% { -webkit-transform: scale(1) translate3d(-258px, -384px, 0); }
   100% { -webkit-transform: scale(0.345) translate3d(-95%, -2887px, 0); } }
 
-#qzad { min-width: 720px; max-width: 1100px; height: 480px; position: relative; top: 0; left: 0; border: 1px solid #D8D8D8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+#qzad { min-width: 720px; max-width: 1100px; height: 480px; position: relative; top: 0; left: 0; border: 1px solid #094f9f; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.bg-container { position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 2327px; background: url("../img/f1-pic.jpg") -258px -384px no-repeat; background-size: 3104px; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; }
-.bg-container.anim { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-position: 9% -233px; background-repeat: no-repeat; background-size: 1070px; height: 802px; }
+.bg-container { position: relative; top: 0; left: 0; right: 0; bottom: 0; }
+.bg-container .fork-lift { position: absolute; bottom: 137px; width: 35.0909090909%; opacity: 0; top: 480px; min-width: 355px; left: 41.6363636364%; }
+.bg-container #bgImg { position: absolute; display: block; width: 282.181818182%; top: -384px; left: -258px; }
 
 .frames-container { position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; overflow: hidden; -webkit-transition: all 1.5s ease-in-out; -moz-transition: all 1.5s ease-in-out; -ms-transition: all 1.5s ease-in-out; -o-transition: all 1.5s ease-in-out; transition: all 1.5s ease-in-out; }
 .frames-container a { display: block; text-decoration: none; }
@@ -42,9 +43,9 @@
 .frames-container .frames.f2 .copy { width: 22.6363636364%; max-width: 249px; min-width: 200px; }
 .frames-container .frames.f3 .copy { width: 31.5454545455%; max-width: 347px; min-width: 287px; }
 .frames-container .frames.f4 .copy { top: 76px; width: 36.4545454545%; max-width: 401px; min-width: 307px; }
-.frames-container .frames.f4 .cta { background: #094f9f; position: relative; top: 381px; bottom: 20px; height: 37px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; left: 2%; width: 20.415879017%; max-width: 216px; min-width: 200px; }
+.frames-container .frames.f4 .cta { background: #094f9f; position: relative; top: 381px; bottom: 20px; height: 37px; left: 2%; width: 20.415879017%; max-width: 216px; min-width: 200px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 .frames-container .frames.f4 .cta img { display: block; vertical-align: middle; }
 .frames-container .frames.f4 .cta span { position: absolute; }
 .frames-container .frames.f4 .cta .cta-text { top: 10px; left: 5.09259259259%; display: block; width: 78.2407407407%; max-width: 169px; height: 17px; }
 .frames-container .frames.f4 .cta .arrow { top: 8px; right: 5.09259259259%; display: inline-block; width: 5.55555555556%; max-width: 12px; height: 19px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; transition: all 0.4s ease; }
-.frames-container .frames.f4 .cta .arrow.move { -webkit-animation: arrowmove 0.4s forwards 1s; -moz-animation: arrowmove 0.4s forwards 1s; -ms-animation: arrowmove 0.4s forwards 1s; animation: arrowmove 0.4s forwards 1s; }
+.frames-container .frames.f4 .cta .arrow.move { -webkit-animation: arrowmove 0.4s linear 1s 2 forwards; -moz-animation: arrowmove 0.4s linear 1s 2 forwards; -ms-animation: arrowmove 0.4s linear 1s 2 forwards; animation: arrowmove 0.4s linear 1s 2 forwards; }
