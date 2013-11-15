@@ -3,7 +3,7 @@
   50% { right: 2.31481481481%; }
   100% { right: 5.09259%; } }
 
-@-moz-keyframe arrowmove { 10% { right: 5.09259%; }
+@-moz-keyframes arrowmove { 10% { right: 5.09259%; }
   49% { right: 2.31481481481%; }
   50% { right: 2.31481481481%; }
   100% { right: 5.09259%; } }
