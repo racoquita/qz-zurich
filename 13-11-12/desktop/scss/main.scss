@@ -29,12 +29,6 @@
 	50% {right: 2.31481481481%;} 
 	100% {right: 5.09259259259% ;}
 }
-@-webkit-keyframes bgmove{
-	0% { -webkit-transform: scale(1) translate3d(-258px,-384px,0); } 
-	
-	100% { -webkit-transform: scale(0.345) translate3d(-95%,-2887px, 0); }  
-}
-
 $zurich-blue: #094f9f;
 
 #qzad{
@@ -164,8 +158,7 @@ $zurich-blue: #094f9f;
 				top:381px;
 				bottom:20px;
 				height: 37px;
-				//left: 2%;
-				left:7.5%;
+				left: 2%;
 				width: 20.415879017%;
 				max-width: 216px;
 				min-width: 200px;
@@ -190,7 +183,7 @@ $zurich-blue: #094f9f;
 					height: 17px;
 				}
 				.arrow{
-					top: 8px;
+					top: 9px;
 					right: 5.09259259259%;
 					display: inline-block;
 					width: 5.55555555556%;
