@@ -71,14 +71,15 @@
 			
 			},
 			function(){
-				frame2.fadeOut(600);
-				setTimeout(function() {
-					frame3.fadeIn(700);
-				}, 50);
+				frame2.fadeOut(700);
+				timeouts[2] = setTimeout(function() {
+					frame3.fadeIn(500);
+				}, 1000);
 				
 
 			},
 			function() {
+
 				frame4.fadeIn(600);
 				arrow.addClass('move');		
 			}
