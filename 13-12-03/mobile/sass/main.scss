@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	display: block;
+}
+#qzad {
+	position:relative;
+	bottom: 0;
+	left:0;
+	width: 320px;
+	height:150px;
+	background: url(../images/bg.jpg) right center no-repeat;
+
+	.container {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		bottom: 12px;
+		left: 12px;
+
+		.connection {
+			margin-top: 19px;
+		}
+		.divider {
+			margin-top: 12px;
+			float: left;
+		}
+		.sponsor {
+			margin-top: -8px;
+			display: inline-block;
+			float: right;
+		}
+	}
+}
