@@ -15,31 +15,36 @@ a {
 
 	.container {
 		position: absolute;
-		top: 36px;
-		right: 33px;
-		bottom: 35px;
-		left: 33px;
+		top: 33px;
+		right: 30px;
+		bottom: 33px;
+		left: 30px;
 
-		.connection {
-			margin-top: 70px;
+		.anywhere {
+			height: 107px;
 		}
 		.divider {
-			margin-top: 65px;
+			margin-top: 32px;
+			height: 6px;
+		}
+		.connection {
+			margin-top: 24px;
+			height: 146px;
+		}
+		.divider2 {
+			margin-top: 68px;
+			height: 6px;
 		}
 		.see-how {
-			margin-top: 31px;
+			margin-top: 22px;
 			display: inline-block;
+			float: left;
+			height: 70px;
 		}
 		.sponsor {
-			width: 100%;
-			margin-top: 36px;
+			margin-top: 30px;
 			display: inline-block;
-			
-			img {
-				width: 230px;
-				margin: 0 auto;
-				display: block;
-			}
+			float: right;
 		}
 	}
 }
