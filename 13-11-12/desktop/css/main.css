@@ -1,48 +1,287 @@
-@-webkit-keyframes arrowmove { 10% { right: 5.09259%; }
-  49% { right: 2.31481481481%; }
-  50% { right: 2.31481481481%; }
-  100% { right: 5.09259%; } }
+@-webkit-keyframes arrowmove {
+  /* line 3, ../scss/main.scss */
+  10% {
+    right: 5.09259%;
+  }
 
-@-moz-keyframes arrowmove { 10% { right: 5.09259%; }
-  49% { right: 2.31481481481%; }
-  50% { right: 2.31481481481%; }
-  100% { right: 5.09259%; } }
+  /* line 4, ../scss/main.scss */
+  49% {
+    right: 2.31481481481%;
+  }
 
-@-o-keyframes arrowmove { 10% { right: 5.09259%; }
-  49% { right: 2.31481481481%; }
-  50% { right: 2.31481481481%; }
-  100% { right: 5.09259%; } }
+  /* line 5, ../scss/main.scss */
+  50% {
+    right: 2.31481481481%;
+  }
 
-@-ms-keyframes arrowmove { 10% { right: 5.09259%; }
-  49% { right: 2.31481481481%; }
-  50% { right: 2.31481481481%; }
-  100% { right: 5.09259%; } }
+  /* line 6, ../scss/main.scss */
+  100% {
+    right: 5.09259%;
+  }
+}
 
-@keyframes arrowmove { 10% { right: 5.09259%; }
-  49% { right: 2.31481481481%; }
-  50% { right: 2.31481481481%; }
-  100% { right: 5.09259%; } }
+@-moz-keyframes arrowmove {
+  /* line 9, ../scss/main.scss */
+  10% {
+    right: 5.09259%;
+  }
 
-#qzad { min-width: 720px; max-width: 1100px; height: 480px; position: relative; top: 0; left: 0; border: 1px solid #094f9f; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+  /* line 10, ../scss/main.scss */
+  49% {
+    right: 2.31481481481%;
+  }
 
-.bg-container { position: relative; top: 0; left: 0; right: 0; bottom: 0; }
-.bg-container .fork-lift { position: absolute; width: 35.0909090909%; opacity: 0; width: 1179px; min-width: 355px; left: 1081px; top: 418px; }
-.bg-container #bgImg { position: absolute; display: block; width: 263.272727273%; top: 0; left: 0; }
+  /* line 11, ../scss/main.scss */
+  50% {
+    right: 2.31481481481%;
+  }
 
-.frames-container { position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; overflow: hidden; -webkit-transition: all 1.5s ease-in-out; -moz-transition: all 1.5s ease-in-out; -ms-transition: all 1.5s ease-in-out; -o-transition: all 1.5s ease-in-out; transition: all 1.5s ease-in-out; }
-.frames-container a { display: block; text-decoration: none; }
-.frames-container img { display: block; width: 100%; border: 0; }
-.frames-container .logo { position: absolute; right: 0%; bottom: 20px; width: 12.7272727273%; max-width: 140px; min-width: 100px; }
-.frames-container .frames { position: inherit; bottom: 0; left: 0; right: 0; top: 0; }
-.frames-container .frames .copy { position: inherit; top: 20px; left: 2%; }
-.frames-container .frames.f2, .frames-container .frames.f3, .frames-container .frames.f4 { display: none; }
-.frames-container .frames.f1 .copy { width: 31.5454545455%; max-width: 347px; min-width: 307px; }
-.frames-container .frames.f2 .copy { width: 22.6363636364%; max-width: 249px; min-width: 200px; }
-.frames-container .frames.f3 .copy { width: 31.5454545455%; max-width: 347px; min-width: 287px; }
-.frames-container .frames.f4 .copy { top: 76px; width: 36.4545454545%; max-width: 401px; min-width: 307px; }
-.frames-container .frames.f4 .cta { background: #094f9f; position: relative; top: 381px; bottom: 20px; height: 37px; left: 2%; width: 20.415879017%; max-width: 216px; min-width: 200px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
-.frames-container .frames.f4 .cta img { display: block; vertical-align: middle; }
-.frames-container .frames.f4 .cta span { position: absolute; }
-.frames-container .frames.f4 .cta .cta-text { top: 10px; left: 5.09259259259%; display: block; width: 78.2407407407%; max-width: 169px; height: 17px; }
-.frames-container .frames.f4 .cta .arrow { top: 9px; right: 5.09259259259%; display: inline-block; width: 5.55555555556%; max-width: 12px; height: 19px; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; transition: all 0.4s ease; }
-.frames-container .frames.f4 .cta .arrow.move { -webkit-animation: arrowmove 0.4s linear 1s 2 forwards; -moz-animation: arrowmove 0.4s linear 1s 2 forwards; -ms-animation: arrowmove 0.4s linear 1s 2 forwards; animation: arrowmove 0.4s linear 1s 2 forwards; }
+  /* line 12, ../scss/main.scss */
+  100% {
+    right: 5.09259%;
+  }
+}
+
+@-o-keyframes arrowmove {
+  /* line 15, ../scss/main.scss */
+  10% {
+    right: 5.09259%;
+  }
+
+  /* line 16, ../scss/main.scss */
+  49% {
+    right: 2.31481481481%;
+  }
+
+  /* line 17, ../scss/main.scss */
+  50% {
+    right: 2.31481481481%;
+  }
+
+  /* line 18, ../scss/main.scss */
+  100% {
+    right: 5.09259%;
+  }
+}
+
+@-ms-keyframes arrowmove {
+  /* line 21, ../scss/main.scss */
+  10% {
+    right: 5.09259%;
+  }
+
+  /* line 22, ../scss/main.scss */
+  49% {
+    right: 2.31481481481%;
+  }
+
+  /* line 23, ../scss/main.scss */
+  50% {
+    right: 2.31481481481%;
+  }
+
+  /* line 24, ../scss/main.scss */
+  100% {
+    right: 5.09259%;
+  }
+}
+
+@keyframes arrowmove {
+  /* line 27, ../scss/main.scss */
+  10% {
+    right: 5.09259%;
+  }
+
+  /* line 28, ../scss/main.scss */
+  49% {
+    right: 2.31481481481%;
+  }
+
+  /* line 29, ../scss/main.scss */
+  50% {
+    right: 2.31481481481%;
+  }
+
+  /* line 30, ../scss/main.scss */
+  100% {
+    right: 5.09259%;
+  }
+}
+
+/* line 34, ../scss/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, ../scss/main.scss */
+#qzad {
+  min-width: 720px;
+  max-width: 1100px;
+  height: 478px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #094f9f;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* line 52, ../scss/main.scss */
+.bg-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 59, ../scss/main.scss */
+.bg-container .fork-lift {
+  position: absolute;
+  width: 35%;
+  width: 1179px;
+  min-width: 355px;
+  left: 1081px;
+  top: 418px;
+}
+/* line 67, ../scss/main.scss */
+.bg-container #bgImg {
+  position: absolute;
+  display: block;
+  width: 263.272727273%;
+  top: 0;
+  left: 0;
+}
+
+/* line 76, ../scss/main.scss */
+.frames-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  overflow: hidden;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -ms-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+/* line 89, ../scss/main.scss */
+.frames-container a {
+  display: block;
+  text-decoration: none;
+}
+/* line 93, ../scss/main.scss */
+.frames-container img {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+/* line 99, ../scss/main.scss */
+.frames-container .logo {
+  position: absolute;
+  right: -1px;
+  bottom: 20px;
+  width: 12.7272727273%;
+  max-width: 140px;
+  min-width: 100px;
+}
+/* line 107, ../scss/main.scss */
+.frames-container .frames {
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+/* line 113, ../scss/main.scss */
+.frames-container .frames .copy {
+  position: inherit;
+  top: 20px;
+  left: 2%;
+}
+/* line 118, ../scss/main.scss */
+.frames-container .frames.f2, .frames-container .frames.f3, .frames-container .frames.f4 {
+  display: none;
+}
+/* line 122, ../scss/main.scss */
+.frames-container .frames.f1 .copy {
+  width: 31.5454545455%;
+  max-width: 347px;
+  min-width: 307px;
+}
+/* line 129, ../scss/main.scss */
+.frames-container .frames.f2 .copy {
+  width: 22.6363636364%;
+  max-width: 249px;
+  min-width: 200px;
+}
+/* line 136, ../scss/main.scss */
+.frames-container .frames.f3 .copy {
+  width: 31.5454545455%;
+  max-width: 347px;
+  min-width: 287px;
+}
+/* line 143, ../scss/main.scss */
+.frames-container .frames.f4 .copy {
+  top: 76px;
+  width: 36.4545454545%;
+  max-width: 401px;
+  min-width: 307px;
+}
+/* line 149, ../scss/main.scss */
+.frames-container .frames.f4 .cta {
+  background: #094f9f;
+  position: relative;
+  top: 381px;
+  bottom: 20px;
+  height: 37px;
+  left: 2%;
+  width: 20.415879017%;
+  max-width: 216px;
+  min-width: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 163, ../scss/main.scss */
+.frames-container .frames.f4 .cta img {
+  display: block;
+  vertical-align: middle;
+}
+/* line 167, ../scss/main.scss */
+.frames-container .frames.f4 .cta span {
+  position: absolute;
+}
+/* line 170, ../scss/main.scss */
+.frames-container .frames.f4 .cta .cta-text {
+  top: 10px;
+  left: 5.09259259259%;
+  display: block;
+  width: 78.2407407407%;
+  max-width: 169px;
+  height: 17px;
+}
+/* line 179, ../scss/main.scss */
+.frames-container .frames.f4 .cta .arrow {
+  top: 9px;
+  right: 5.09259259259%;
+  display: inline-block;
+  width: 5.55555555556%;
+  max-width: 12px;
+  height: 19px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 190, ../scss/main.scss */
+.frames-container .frames.f4 .cta .arrow.move {
+  -webkit-animation: arrowmove 0.4s linear 1s 2 forwards;
+  -moz-animation: arrowmove 0.4s linear 1s 2 forwards;
+  -ms-animation: arrowmove 0.4s linear 1s 2 forwards;
+  animation: arrowmove 0.4s linear 1s 2 forwards;
+}

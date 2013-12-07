@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	display: block;
+}
+#qzad {
+	position:relative;
+	bottom: 0;
+	left:0;
+	width: 480px;
+	height:550px;
+	background: url(http://ads.qz.com/sponsors/zurich/13-12-03/tablet/images/bg.jpg) right center no-repeat;
+
+	.container {
+		position: absolute;
+		top: 33px;
+		right: 30px;
+		bottom: 33px;
+		left: 30px;
+
+		.anywhere {
+			height: 107px;
+		}
+		.divider {
+			margin-top: 32px;
+			height: 6px;
+		}
+		.connection {
+			margin-top: 24px;
+			height: 146px;
+		}
+		.divider2 {
+			margin-top: 68px;
+			height: 6px;
+		}
+		.see-how {
+			margin-top: 22px;
+			display: inline-block;
+			float: left;
+			height: 70px;
+		}
+		.sponsor {
+			margin-top: 30px;
+			display: inline-block;
+			float: right;
+		}
+	}
+}

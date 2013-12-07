@@ -4,23 +4,14 @@
 	<title>Zurich Desktop  </title>
 	<meta name="viewport" content="initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<style type="text/css">
-		* {
-			margin: 0;
-			padding: 0;
-		}
-	</style>
 </head>
 <body>
 	<div id="qzad">
-		
 		<div class="frames-container">
 			<div class="bg-container no-flicker">
 				<img src="img/f1-pic.jpg" alt="" id="bgImg" width="3104">
 				<img src="img/fork-lift.png" alt="" width="386" class="fork-lift"/>			
 			</div>
-
 			<div class="frames f1 no-flicker">
 				<div class="copy"><img src="img/f1-copy.png" width="401" alt="When you are passionate about something,"></div>
 			</div>
@@ -45,7 +36,6 @@
 	<script type="text/javascript" src="js/plugins/CSSPlugin.min.js"></script>
 	<script type="text/javascript" src="js/easing/EasePack.min.js"></script>
 	<script type="text/javascript" src="js/TimelineLite.min.js"> </script>
-
 	<script type="text/javascript">
 		var times = [3500, 3800, 2000];
 		var frame1, frame2, frame3, frame4, cta, framesContainer, arrow, bgContainer, bg, forkLift;
@@ -53,33 +43,25 @@
 		var timeouts = [];
 		var frames =[
 			function(){
-
 				frame1.fadeOut(500, function() {
-					//bgContainer.addClass('anim');
-					//bg.addClass('anim');
-					//bg = document.getElementById('bgImg');
 					var timeline = new TimelineLite();
 					
 					timeline.to(bg, 1,  { left:0, top:"-100px", width:1070, ease: Power2.easeInOut }, 0);
-					timeline.to( forkLift,1, {  top:65, right:"19%", left: "41.6363636364%" , opacity: 1, ease: Power2.easeInOut, width:"35.0909090909%"} , 0);
+					timeline.to( forkLift, 1, {  top:65, right:"19%", left: "41.5%" , opacity: 1, ease: Power2.easeInOut, width:"35%"} , 0);
 					timeline.play();
 					
 					timeouts[1] = setTimeout(function() {
 						frame2.fadeIn(400);
 					}, 1500);
 				});
-			
 			},
 			function(){
 				frame2.fadeOut(700);
 				timeouts[2] = setTimeout(function() {
 					frame3.fadeIn(500);
 				}, 1000);
-				
-
 			},
 			function() {
-
 				frame4.fadeIn(600);
 				arrow.addClass('move');		
 			}
@@ -99,10 +81,8 @@
 			frame1.show();
 		};
 		function changeFrame () {
-			
 			if($.isFunction(frames[currentFrame])) {
 				timeouts[0] = setTimeout(function() {
-					
 					frames[currentFrame]();
 					currentFrame++;
 					changeFrame();

@@ -1,0 +1,60 @@
+/* line 1, ../sass/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/main.scss */
+a {
+  display: block;
+}
+
+/* line 8, ../sass/main.scss */
+#qzad {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 480px;
+  height: 550px;
+  background: url(http://ads.qz.com/sponsors/zurich/13-12-03/tablet/images/bg.jpg) right center no-repeat;
+}
+/* line 16, ../sass/main.scss */
+#qzad .container {
+  position: absolute;
+  top: 33px;
+  right: 30px;
+  bottom: 33px;
+  left: 30px;
+}
+/* line 23, ../sass/main.scss */
+#qzad .container .anywhere {
+  height: 107px;
+}
+/* line 26, ../sass/main.scss */
+#qzad .container .divider {
+  margin-top: 32px;
+  height: 6px;
+}
+/* line 30, ../sass/main.scss */
+#qzad .container .connection {
+  margin-top: 24px;
+  height: 146px;
+}
+/* line 34, ../sass/main.scss */
+#qzad .container .divider2 {
+  margin-top: 68px;
+  height: 6px;
+}
+/* line 38, ../sass/main.scss */
+#qzad .container .see-how {
+  margin-top: 22px;
+  display: inline-block;
+  float: left;
+  height: 70px;
+}
+/* line 44, ../sass/main.scss */
+#qzad .container .sponsor {
+  margin-top: 30px;
+  display: inline-block;
+  float: right;
+}

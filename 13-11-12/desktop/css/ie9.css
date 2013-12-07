@@ -1,3 +1,4 @@
+/* line 1, ../scss/ie9.scss */
 .bg-container {
   position: absolute;
   top: 0;
@@ -5,22 +6,29 @@
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background: url("../img/f1-pic.jpg") -258px -384px no-repeat;
+  background: url("http://ads.qz.com/sponsors/zurich/13-11-12/desktop/img/f1-pic.jpg") -258px -384px no-repeat;
   background-size: 3104px;
   border: 20px solid white;
   -webkit-transition: all 1.5s ease-in-out;
   -moz-transition: all 1.5s ease-in-out;
   -ms-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out; }
-  .bg-container a {
-    display: block;
-    text-decoration: none; }
-  .bg-container img {
-    display: block;
-    width: 100%;
-    border: 0; }
-  .bg-container.anim {
-    background: url("../img/f1-pic.jpg") 9% 70% no-repeat;
-    background-size: 106%;
-    background-origin: center left; }
+  transition: all 1.5s ease-in-out;
+}
+/* line 17, ../scss/ie9.scss */
+.bg-container a {
+  display: block;
+  text-decoration: none;
+}
+/* line 21, ../scss/ie9.scss */
+.bg-container img {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+/* line 26, ../scss/ie9.scss */
+.bg-container.anim {
+  background: url("http://ads.qz.com/sponsors/zurich/13-11-12/desktop/img/f1-pic.jpg") 9% 70% no-repeat;
+  background-size: 106%;
+  background-origin: center left;
+}

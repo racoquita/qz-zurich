@@ -31,10 +31,14 @@
 }
 $zurich-blue: #094f9f;
 
+* {
+	margin: 0;
+	padding: 0;
+}
 #qzad{
 	min-width:720px;
 	max-width:1100px;
-	height:480px;
+	height:478px;
 	position:relative;
 	top:0;
 	left:0;
@@ -42,6 +46,7 @@ $zurich-blue: #094f9f;
 	-webkit-box-sizing: border-box; 
 	   -moz-box-sizing: border-box; 
 		    box-sizing: border-box;
+	background-color: white;
 }
 
 .bg-container{
@@ -50,32 +55,21 @@ $zurich-blue: #094f9f;
 		left:0;
 		right: 0;
 		bottom:0;
-		//width: 3104px;
 
 		.fork-lift{
 			position:absolute;
-			
-			//bottom: 347px;
-			width: 35.0909090909%;
-			opacity: 0;
+			width: 35%;
 			width: 1179px;
 			min-width: 355px;
-			//max-width: 386px;
-			//left: 41.6363636364%;
 			left:1081px;
 			top:418px;
-			// width: 35.0909090909%;
-			// max-width: 386px;
 		}
 		#bgImg{
 			position:absolute;
 			display: block;
-			//height: 2327px;
-			width: 263.272727273%; //3104px;
+			width: 263.272727273%;
 			top:0;
 			left:0;
-			//min-width: 1070px;
-			
 		}
 	}
 
@@ -104,7 +98,7 @@ $zurich-blue: #094f9f;
 	
 	.logo{
 		position:absolute;
-		right: 0%;
+		right: -1px;
 		bottom:20px;
 		width: 12.7272727273%;
 		max-width: 140px;
