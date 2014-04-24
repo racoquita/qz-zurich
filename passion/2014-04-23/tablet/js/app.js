@@ -1,33 +1,41 @@
 var App = function() {
 	var that = this;
-	var container;
-	var background;
+	var timeouts = [];
 
 	this.on = function() {
-		$('.ad-container').show();
+		$('.background, .text1').show().addClass('fadeIn');
 
-		container = document.getElementById('qzad');
-		background = document.getElementById('background');		
-		this.addListeners();
-		container.style.display = "block";
-		$('.white').css('z-index', -1);
+		timeouts[0] = setTimeout(function(){
+			$('.text1').removeClass('fadeIn').addClass('fadeOut');
 
-		timer = setTimeout(function(){
-            $('.white').hide();
-        }, 11000);
+			timeouts[1] = setTimeout(function(){
+				$('.text1').hide();
+				$('.background img:last-child').addClass('fadeOut');
+
+				timeouts[2] = setTimeout(function(){
+					$('.background img:first-child').show().addClass('fadeIn');
+
+					timeouts[3] = setTimeout(function(){
+						$('.text2').show().addClass('fadeIn');
+
+						timeouts[4] = setTimeout(function(){
+							$('.text2').removeClass('fadeIn').addClass('fadeOut');
+
+							timeouts[5] = setTimeout(function(){
+								$('.zurich').show().addClass('fadeIn');
+
+								timeouts[6] = setTimeout(function(){
+									$('.tagline').show().addClass('fadeIn');
+									$('.cta img').addClass('arrowmove');
+								}, 1000);
+							}, 500);
+						}, 2000);
+					}, 250);
+				}, 250);
+			}, 750);
+		}, 2000);
 	}
 	this.off = function() {
-		clearTimeout(timer);
-        $('.white').show();
-        $('.ad-container').hide();
+		
 	}
-	this.addListeners = function() {
-		container.addEventListener('click', that.bgExitHandler, false);
-	}
-	this.bgExitHandler = function() {
-		Enabler.exit('exit URL');
-	}
-	this.removeClass = function(el, className){
-        el.classList.remove(className);
-    }
 };

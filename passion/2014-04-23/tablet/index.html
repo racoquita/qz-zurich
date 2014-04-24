@@ -10,48 +10,34 @@
 <body>
 	<div id="qzad">
         <div class="ad-container">
-	    	<div class="background">
-	    		<img src="images/bg1.jpg" />
+	    	<div class="background animated">
+	    		<img src="images/bg2.jpg" class="fast">
+	    		<img src="images/bg1.jpg" class="fast">
     		</div>
-	        <div class="background2">
-	        	<img src="images/bg2.jpg" />
-        	</div>
-	        <div class="text1">
-	        	<img src="images/copy1.png" />
-        	</div>
-	        <div class="text2">
-	        	<img src="images/copy2.png"/>
-        	</div>
-	        <div class="tagline">
-	        	<img src="images/tagline.png" alt="tagline" />
-        	</div>  
-	        <div class="zurich">
-	        	<img src="images/zurich.png" alt="zurich" />
-        	</div> 
-	        <a  href="http://www.zurich.com/campaign/cxo/us/index.htm" 
+    		<a  href="http://www.zurich.com/campaign/cxo/us/index.htm" 
 	        	class="cta ixtrack" 
 	        	target="_blank" 
 	        	data-ix-category="external" 
 	        	data-ix-label="primary cta clicked">
-	            	<img src="images/cta.png" alt="cta" />
+	        		<img src="images/arrow.png" width="16" height="16" alt="arrow">
 	        </a>
-	        <div class="arrow">
-	        	<img src="images/arrow.png" width="16" height="16" alt="arrow" />
-	        </div>
-	        <div class="white"></div>
+    		<a  href="http://www.zurich.com/campaign/cxo/us/index.htm" 
+		    	class="logo ixtrack" 
+		    	target="_blank" 
+		    	data-ix-category="external" 
+		    	data-ix-label="logo clicked">
+		    </a>
+
+	        <img src="images/copy1.png" class="text1 animated">
+	        <img src="images/copy2.png" class="text2 animated">
+	        <img src="images/zurich.png" alt="zurich" class="zurich animated">
+	        <img src="images/tagline.png" alt="tagline" class="tagline animated">  
 	    </div>
 	        
-	    <a  href="http://www.zurich.com/campaign/cxo/us/index.htm" 
-	    	class="logo ixtrack" 
-	    	target="_blank" 
-	    	data-ix-category="external" 
-	    	data-ix-label="logo clicked">
-	        	<img src="images/logo.png" alt="logo" />
-	    </a>
+	    
 	</div>
 
-	<script src="http://app.qz.com/js/vendor/jQuery-min.js" type="text/javascript"></script>
-	<script src="http://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+	<script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
