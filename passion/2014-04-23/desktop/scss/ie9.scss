@@ -5,13 +5,13 @@
 	right:0;
 	bottom:0;
 	overflow:hidden;
-	background: url("http://ads.qz.com/sponsors/zurich/13-11-12/desktop/img/f1-pic.jpg") -258px -384px no-repeat;
+	background: url(../images/f1-pic.jpg) -258px -384px no-repeat;
 	background-size:3104px;
 	border: 20px solid white;
 	-webkit-transition: all 1.5s ease-in-out;
 	   -moz-transition: all 1.5s ease-in-out;
 	    -ms-transition: all 1.5s ease-in-out;
-	      -o-transition: all 1.5s ease-in-out;
+	     -o-transition: all 1.5s ease-in-out;
 	        transition: all 1.5s ease-in-out;
 
 	a{
@@ -24,7 +24,7 @@
 		border:0;
 	}
 	&.anim{
-		background: url("http://ads.qz.com/sponsors/zurich/13-11-12/desktop/img/f1-pic.jpg") 9% 70% no-repeat;
+		background: url(../images/f1-pic.jpg) 9% 70% no-repeat;
 		background-size: 106%;
 		background-origin: center left;
 	}

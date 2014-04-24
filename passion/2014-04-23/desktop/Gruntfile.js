@@ -71,17 +71,20 @@ module.exports = function(grunt) {
       deploy: {
         options: {
           base: 'http://ads.quartz.cc/sponsors',
-          client: 'example_client',
-          campaign: 'example_campaign',
-          date: '2014-04-15',
+          client: 'zurich',
+          campaign: 'passion',
+          date: '2014-04-23',
           unit: 'desktop',
           version: '1',
           internal_scripts: [
-            
+            'js/TweenLite.min.js',
+            'js/plugins/CSSPlugin.min.js',
+            'js/easing/EasePack.min.js',
+            'js/TimelineLite.min.js'
           ],
           external_scripts: [
             'http://app.qz.com/js/vendor/jQuery-min.js',
-            'http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.41.js',
+            'http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.48.js',
             'http://app.qz.com/js/frameMessager/QZIX.js'
           ]
         }

@@ -82,7 +82,7 @@ module.exports = function(grunt) {
           external_scripts: [
             'http://s0.2mdn.net/ads/studio/Enabler.js',
             'http://app.qz.com/js/vendor/jQuery-min.js',
-            'http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.41.js',
+            'http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.48.js',
             'http://app.qz.com/js/frameMessager/QZIX.js'
           ]
         }
