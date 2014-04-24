@@ -37,4 +37,4 @@
   50% { right: 10px; }
   100% { right: 20px; } }
 
-.arrowmove { -webkit-animation-name: arrowmove; animation-name: arrowmove; -webkit-animation-iteration-count: 4; animation-iteration-count: 4; -webkit-animation-delay: 500; animation-delay: 500; -webkit-animation-duration: .25s; animation-duration: .25s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+.arrowmove { -webkit-animation-name: arrowmove; animation-name: arrowmove; -webkit-animation-iteration-count: 3; animation-iteration-count: 3; -webkit-animation-delay: 500; animation-delay: 500; -webkit-animation-duration: .35s; animation-duration: .35s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
