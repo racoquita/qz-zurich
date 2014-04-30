@@ -7,10 +7,11 @@ $zurich-blue: #094f9f;
 #qzad{
 	min-width:720px;
 	max-width:1100px;
-	height:478px;
+	height:480px;
 	position:relative;
 	top:0;
 	left:0;
+	margin: 1px;
 	border: 1px solid $zurich-blue;
 	-webkit-box-sizing: border-box; 
 	   -moz-box-sizing: border-box; 
@@ -69,8 +70,8 @@ $zurich-blue: #094f9f;
 		position:absolute;
 		right: -1px;
 		bottom:20px;
-		width: 12.7272727273%;
-		max-width: 140px;
+		width: 18.18%%;
+		max-width: 200px;
 		min-width: 100px;
 	}
 	.frames{
@@ -89,30 +90,26 @@ $zurich-blue: #094f9f;
 		}
 		&.f1{
 			.copy{
-				width: 31.5454545455%;
-				max-width: 347px;
+				width: 35.54%;
 				min-width: 307px;
 			}
 		}
 		&.f2{
 			.copy{
-				width: 22.6363636364%;
-				max-width: 249px;
+				width: 25.13%;
 				min-width: 200px;
 			}
 		}
 		&.f3{
 			.copy{
-				width: 31.5454545455%;
-				max-width: 347px;
+				width: 35.82%;
 				min-width: 287px;
 			}
 		}
 		&.f4{
 			.copy{
 				top:76px;
-				width: 36.4545454545%;
-				max-width: 401px;
+				width: 41.58%;
 				min-width: 307px;
 			}
 		}
@@ -120,12 +117,12 @@ $zurich-blue: #094f9f;
 	.cta {
 		background: $zurich-blue;
 		position:relative;
-		top:381px;
+		top:365px;
 		bottom:20px;
-		height: 37px;
+		height: 53px;
 		left: 2%;
-		width: 20.415879017%;
-		max-width: 216px;
+		width: 27.45%;
+		max-width: 302px;
 		min-width: 200px;
 		-webkit-border-radius: 5px;
 		   -moz-border-radius: 5px;
@@ -139,19 +136,19 @@ $zurich-blue: #094f9f;
 			position:absolute;
 		}
 		.cta-text{
-			top:10px;
+			top:16px;
 			left:5.09259259259%;		
 			display: block;
 			width: 78.2407407407%;
-			max-width: 169px;
-			height: 17px;
+			max-width: 237px;
+			height: 53px;
 		}
 		.arrow{
-			top: 9px;
+			top: 14px;
 			right: 5.09259259259%;
 			display: inline-block;
 			width: 5.55555555556%;
-			max-width: 12px;
+			max-width: 17px;
 			height: 19px;
 			-webkit-transition: all 0.4s ease;
 			   -moz-transition: all 0.4s ease;

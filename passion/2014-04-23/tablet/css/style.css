@@ -1,4 +1,6 @@
-#qzad { position: absolute; width: 480px; height: 550px; overflow: hidden; outline: 1px solid #080369; border: 10px solid #fff; background-color: #fff; box-sizing: border-box; }
+body { margin: 0; }
+
+#qzad { position: absolute; width: 478px; height: 548px; margin: 1px; overflow: hidden; outline: 1px solid #080369; border: 10px solid #fff; background-color: #fff; box-sizing: border-box; }
 #qzad .background img:first-child { display: none; position: absolute; top: 0; }
 #qzad .background img:last-child { position: absolute; top: 0; }
 #qzad .cta { position: absolute; bottom: 10px; left: 10px; width: 201px; height: 35px; background: url(../images/cta.png) no-repeat center center; background-size: 100%; }

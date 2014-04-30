@@ -75,7 +75,7 @@ module.exports = function(grunt) {
           campaign: 'passion',
           date: '2014-04-23',
           unit: 'desktop',
-          version: '1',
+          version: '2',
           internal_scripts: [
             'js/TweenLite.min.js',
             'js/plugins/CSSPlugin.min.js',
