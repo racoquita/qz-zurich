@@ -14,7 +14,7 @@
 .frames-container .frames .copy { position: inherit; top: 20px; left: 2%; }
 .frames-container .frames.f2, .frames-container .frames.f3, .frames-container .frames.f4 { display: none; }
 .frames-container .frames.f1 .copy { width: 35.54%; min-width: 307px; }
-.frames-container .frames.f2 .copy { width: 25.13%; min-width: 200px; }
+.frames-container .frames.f2 .copy { width: 29.13%; min-width: 200px; }
 .frames-container .frames.f3 .copy { width: 35.82%; min-width: 287px; }
 .frames-container .frames.f4 .copy { top: 76px; width: 41.58%; min-width: 307px; }
 .frames-container .cta { background: #094f9f; position: relative; top: 365px; bottom: 20px; height: 53px; left: 2%; width: 27.45%; max-width: 302px; min-width: 200px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
