@@ -75,7 +75,7 @@ module.exports = function(grunt) {
           campaign: 'passion',
           date: '2014-04-23',
           unit: 'tablet',
-          version: '4',
+          version: '5',
           internal_scripts: [
             
           ],
