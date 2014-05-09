@@ -11,16 +11,10 @@ var App = function() {
 
 	}
 	this.loadVideo = function() {
-		$('.video-container').show();
-		$('.x').off().on('click', function(){
-			that.unloadVideo();
-		});
-
 		brightcove.createExperiences();
 	}
 	this.unloadVideo = function() {
-		$('.video').empty();
-		$('.video-container').hide();
+		$('.video-container').css('z-index', 1);
 	}
 	window.onTemplateLoad = function ( experienceID ) {
 		player = brightcove.api.getExperience(experienceID);
@@ -31,7 +25,13 @@ var App = function() {
 	    contentModule = player.getModule(APIModules.CONTENT);
 
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, function(){
-	    	$('.x').trigger('click');
+	    	that.unloadVideo();
+	    });
+	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.STOP, function(){
+	    	that.unloadVideo();
+	    });
+	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(){
+	    	$('.video-container').css('z-index', 111);
 	    });
 
 	    videoPlayer.getCurrentVideo(function (videoDTO) {
