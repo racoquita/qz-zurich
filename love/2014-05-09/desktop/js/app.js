@@ -23,6 +23,8 @@ var App = function() {
 			e.preventDefault();
 			that.loadVideo();
 		});
+
+		qz.confetti('confetti',100, 12);
 	}
 	this.off = function() {
 
