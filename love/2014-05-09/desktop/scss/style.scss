@@ -111,9 +111,9 @@ body {
     -o-animation: moveclouds 6s linear infinite, sideWays 5s ease-in-out infinite alternate;
 }
 .s3 {
-    -webkit-transform: scale(4);
-    -moz-transform: scale(4);
-    transform: scale(4);
+    -webkit-transform: scale(.4);
+    -moz-transform: scale(.4);
+    transform: scale(.4);
     -webkit-animation: moveclouds 5s linear infinite, sideWays 4s ease-in-out infinite alternate;
     -moz-animation: moveclouds 5s linear infinite, sideWays 4s ease-in-out infinite alternate;
     -o-animation: moveclouds 5s linear infinite, sideWays 4s ease-in-out infinite alternate;
@@ -141,7 +141,7 @@ body {
 }
 @-webkit-keyframes sideWays { 
     0% { margin-left:0px; }
-    100% { margin-left:20px; }
+    100% { margin-left:300px; }
 }
 @-moz-keyframes moveclouds {     
     0% { top: -10px; }
@@ -149,7 +149,7 @@ body {
 }
 @-moz-keyframes sideWays {
     0% { margin-left:0px; }
-    100% { margin-left:20px; }
+    100% { margin-left:300px; }
 }
 @-o-keyframes moveclouds {
     0% { top: -10px; }
@@ -157,5 +157,5 @@ body {
 }
 @-o-keyframes sideWays {
     0% { margin-left:0px; }
-    100% { margin-left:20px; }
+    100% { margin-left:300px; }
 }
