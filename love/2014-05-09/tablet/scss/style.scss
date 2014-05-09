@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+}
+#qzad {
+	position: absolute;
+	width: 480px;
+	height: 550px;
+	overflow: hidden;
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: 100%;
+
+	.copy {
+		margin: 32px 0 0 32px;
+
+		img {
+			display: block;
+
+			&:first-child {
+				width: 382px;
+				margin: 0 0 29px 0;
+			}
+			&:last-child {
+				width: 382px;
+			}
+		}
+	}
+	.cta {
+		display: block;
+		width: 172px;
+		height: 36px;
+		margin: 70px 0 0 32px;
+		background-color: #005aab;
+		border-radius: 3px;
+
+		img:first-child {
+			width: 132px;
+			padding: 11px 0 0 10px;
+			float: left;
+		}
+		img:last-child {
+			width: 12px;
+			padding: 9px 0 0 10px;
+		}
+	}
+	.logo {
+		position: absolute;
+		right: 0;
+		bottom: 32px;
+		width: 133px;
+		height: 94px;
+		background: url(../images/logo.jpg) no-repeat center center;
+		background-size: 100%;
+	}
+	.video-container {
+		position: absolute;
+		z-index: 101;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: black;
+		display: none;
+
+		.video {
+			width: 480px;
+			height: 270px;
+			margin-top: 140px;
+		}
+		.x {
+			color: white;
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 30px;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			text-align: center;
+			line-height: 26px;
+			border: 1px solid white;
+		}
+	}
+}
