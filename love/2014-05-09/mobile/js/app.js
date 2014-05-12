@@ -8,7 +8,9 @@ var App = function() {
 		});
 	}
 	this.off = function() {
-
+		$('.video').empty();
+		$('.video-container').hide();
+		$('.cta img:first-child').attr('src', 'images/cta.png');
 	}
 	this.loadVideo = function() {
 		brightcove.createExperiences();
@@ -25,9 +27,13 @@ var App = function() {
 	    contentModule = player.getModule(APIModules.CONTENT);
 
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, function(){
+	    	$('.cta').off().attr('href', 'http://www.zurichna.com/zna/home/welcome.htm').css('pointer-events', 'auto');
+			$('.cta img:first-child').attr('src', 'images/learn-more.png');
 	    	that.unloadVideo();
 	    });
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.STOP, function(){
+	    	$('.cta').off().attr('href', 'http://www.zurichna.com/zna/home/welcome.htm').css('pointer-events', 'auto');
+			$('.cta img:first-child').attr('src', 'images/learn-more.png');
 	    	that.unloadVideo();
 	    });
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(){

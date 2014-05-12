@@ -2,6 +2,7 @@ var qz = {};
 
 qz.confetti = function(elem, num, size) {
 	var el;
+	var timer;
 
 	(function(){init()})();
 
@@ -43,6 +44,5 @@ qz.confetti = function(elem, num, size) {
 
 			el.appendChild(confetti);
 		}, i * 250);
-			
 	};
 }

@@ -25,12 +25,16 @@ var App = function() {
 		});
 	}
 	this.off = function() {
-
+		$('.video').empty();
+		$('.video-container').hide();
+		$('.cta img:first-child').attr('src', 'images/cta.png');
 	}
 	this.loadVideo = function() {
 		$('.video-container').show();
 		$('.video').html(template);
 		$('.x').off().on('click', function(){
+			$('.cta').off().attr('href', 'http://www.zurichna.com/zna/home/welcome.htm');
+			$('.cta img:first-child').attr('src', 'images/learn-more.png');
 			that.unloadVideo();
 		});
 

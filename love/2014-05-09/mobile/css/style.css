@@ -7,7 +7,7 @@ body { margin: 0; }
 #qzad .wrapper .copy img:first-child { width: 227px; margin: 0 0 18px 0; }
 #qzad .wrapper .copy img:last-child { width: 227px; }
 #qzad .wrapper .cta { pointer-events: none; display: block; width: 115px; height: 25px; margin: 23px 0 0 18px; background-color: #005aab; border-radius: 3px; }
-#qzad .wrapper .cta img:first-child { width: 83px; padding: 7px 0 0 8px; float: left; }
+#qzad .wrapper .cta img:first-child { width: 83px; height: 10px; padding: 7px 0 0 8px; float: left; }
 #qzad .wrapper .cta img:last-child { width: 8px; padding: 6px 0 0 8px; }
 #qzad .wrapper .logo { position: absolute; right: 0; bottom: 9px; width: 61px; height: 43px; background: url(../images/logo.jpg) no-repeat center center; background-size: 100%; pointer-events: auto; }
 #qzad .video-container { position: absolute; z-index: 1; top: 0; right: 0; bottom: 0; left: 0; background-color: black; }
