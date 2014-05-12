@@ -33,7 +33,7 @@ var App = function() {
 		$('.video-container').show();
 		$('.video').html(template);
 		$('.x').off().on('click', function(){
-			$('.cta').off().attr('href', 'http://www.zurichna.com/zna/home/welcome.htm');
+			$('.cta').off().attr('href', 'http://www.zurich.com/campaign/cxo/index.htm');
 			$('.cta img:first-child').attr('src', 'images/learn-more.png');
 			that.unloadVideo();
 		});
