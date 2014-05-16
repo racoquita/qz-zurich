@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+#qzad {
+	position: absolute;
+	width: 320px;
+	height: 150px;
+	overflow: hidden;
+
+	.wrapper {
+		position: absolute;
+		z-index: 101;
+		width: 100%;
+		height: 100%;
+		background: url(../images/bg.jpg) no-repeat center center;
+		background-size: 100%;
+		pointer-events: none;
+
+		.copy {
+			margin: 17px 0 0 18px;
+			pointer-events: auto;
+
+			img {
+				display: block;
+
+				&:first-child {
+					width: 227px;
+					margin: 0 0 18px 0;
+				}
+				&:last-child {
+					width: 227px;
+				}
+			}
+		}
+		.cta {
+			pointer-events: none;
+			display: block;
+			width: 115px;
+			height: 25px;
+			margin: 23px 0 0 18px;
+			background-color: #005aab;
+			border-radius: 3px;
+
+			img:first-child {
+				width: 83px;
+				height: 10px;
+				padding: 7px 0 0 8px;
+				float: left;
+			}
+			img:last-child {
+				width: 8px;
+				padding: 6px 0 0 8px;
+			}
+		}
+		.logo {
+			position: absolute;
+			right: 0;
+			bottom: 9px;
+			width: 61px;
+			height: 43px;
+			background: url(../images/logo.jpg) no-repeat center center;
+			background-size: 100%;
+			pointer-events: auto;
+		}
+	}
+	.video-container {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: black;
+
+		.video {
+			width: 100%;
+			height: 100%;
+		}
+		.x {
+			color: white;
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 30px;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			text-align: center;
+			line-height: 26px;
+			border: 1px solid white;
+		}
+	}
+}
