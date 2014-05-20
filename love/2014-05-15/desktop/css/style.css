@@ -5,7 +5,7 @@ body { margin: 0; }
 #qzad .copy img { display: block; }
 #qzad .copy img:first-child { margin: 0 0 36px 0; }
 #qzad .cta { display: block; position: relative; z-index: 11; width: 203px; height: 47px; margin: 108px 0 0 74px; background-color: #005aab; border-radius: 3px; }
-#qzad .cta img:first-child { padding: 14px 0 0 10px; float: left; }
+#qzad .cta img:first-child { width: 159px; padding: 14px 0 0 10px; float: left; }
 #qzad .cta img:last-child { padding: 11px 0 0 10px; }
 #qzad .logo { position: absolute; right: 0; z-index: 11; bottom: 28px; width: 158px; height: 112px; background: url(../images/logo.jpg) no-repeat center center; }
 #qzad .video-container { position: absolute; z-index: 101; top: 0; right: 0; bottom: 0; left: 0; background-color: black; display: none; }
