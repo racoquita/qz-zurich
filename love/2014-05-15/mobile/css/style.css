@@ -4,9 +4,9 @@ body { margin: 0; }
 #qzad .wrapper { position: absolute; z-index: 101; width: 100%; height: 100%; background: url(../images/bg.jpg) no-repeat center center; background-size: 100%; pointer-events: none; }
 #qzad .wrapper .copy { margin: 17px 0 0 18px; pointer-events: auto; }
 #qzad .wrapper .copy img { display: block; }
-#qzad .wrapper .copy img:first-child { width: 227px; margin: 0 0 18px 0; }
-#qzad .wrapper .copy img:last-child { width: 227px; }
-#qzad .wrapper .cta { pointer-events: none; display: block; width: 115px; height: 25px; margin: 23px 0 0 18px; background-color: #005aab; border-radius: 3px; }
+#qzad .wrapper .copy img:first-child { width: 198px; margin: 0 0 18px 0; }
+#qzad .wrapper .copy img:last-child { width: 198px; }
+#qzad .wrapper .cta { position: absolute; bottom: 9px; left: 18px; pointer-events: none; display: block; width: 115px; height: 25px; background-color: #005aab; border-radius: 3px; }
 #qzad .wrapper .cta img:first-child { width: 83px; height: 10px; padding: 7px 0 0 8px; float: left; }
 #qzad .wrapper .cta img:last-child { width: 8px; padding: 6px 0 0 8px; }
 #qzad .wrapper .logo { position: absolute; right: 0; bottom: 9px; width: 61px; height: 43px; background: url(../images/logo.jpg) no-repeat center center; background-size: 100%; pointer-events: auto; }

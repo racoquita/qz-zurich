@@ -25,10 +25,12 @@ body {
 		}
 	}
 	.cta {
+		position: absolute;
 		display: block;
 		width: 172px;
 		height: 36px;
-		margin: 70px 0 0 32px;
+		bottom: 32px;
+		left: 32px;
 		background-color: #005aab;
 		border-radius: 3px;
 

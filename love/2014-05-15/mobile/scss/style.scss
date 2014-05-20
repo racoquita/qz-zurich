@@ -24,20 +24,22 @@ body {
 				display: block;
 
 				&:first-child {
-					width: 227px;
+					width: 198px;
 					margin: 0 0 18px 0;
 				}
 				&:last-child {
-					width: 227px;
+					width: 198px;
 				}
 			}
 		}
 		.cta {
+			position: absolute;
+			bottom: 9px;
+			left: 18px;
 			pointer-events: none;
 			display: block;
 			width: 115px;
 			height: 25px;
-			margin: 23px 0 0 18px;
 			background-color: #005aab;
 			border-radius: 3px;
 
