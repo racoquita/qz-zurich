@@ -27,14 +27,14 @@ var App = function() {
 	this.off = function() {
 		$('.video').empty();
 		$('.video-container').hide();
-		$('.cta img:first-child').attr('src', 'images/cta.png');
+		$('.cta img:first-child').attr('src', 'http://ads.qz.com/sponsors/zurich/love/2014-05-09/desktop/images/cta.png');
 	}
 	this.loadVideo = function() {
 		$('.video-container').show();
 		$('.video').html(template);
 		$('.x').off().on('click', function(){
 			$('.cta').off().attr('href', 'http://www.zurich.com/campaign/cxo/index.htm');
-			$('.cta img:first-child').attr('src', 'images/learn-more.png');
+			$('.cta img:first-child').attr('src', 'http://ads.qz.com/sponsors/zurich/love/2014-05-09/desktop/images/learn-more.png');
 			that.unloadVideo();
 		});
 

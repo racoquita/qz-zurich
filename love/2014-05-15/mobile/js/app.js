@@ -10,7 +10,7 @@ var App = function() {
 	this.off = function() {
 		$('.video').empty();
 		$('.video-container').hide();
-		$('.cta img:first-child').attr('src', 'images/cta.png');
+		$('.cta img:first-child').attr('src', 'http://ads.qz.com/sponsors/zurich/love/2014-05-09/mobile/images/cta.png');
 	}
 	this.loadVideo = function() {
 		brightcove.createExperiences();
@@ -28,12 +28,12 @@ var App = function() {
 
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, function(){
 	    	$('.cta').off().attr('href', 'http://www.zurich.com/campaign/cxo/index.htm').css('pointer-events', 'auto');
-			$('.cta img:first-child').attr('src', 'images/learn-more.png');
+			$('.cta img:first-child').attr('src', 'http://ads.qz.com/sponsors/zurich/love/2014-05-09/mobile/images/learn-more.png');
 	    	that.unloadVideo();
 	    });
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.STOP, function(){
 	    	$('.cta').off().attr('href', 'http://www.zurich.com/campaign/cxo/index.htm').css('pointer-events', 'auto');
-			$('.cta img:first-child').attr('src', 'images/learn-more.png');
+			$('.cta img:first-child').attr('src', 'http://ads.qz.com/sponsors/zurich/love/2014-05-09/mobile/images/learn-more.png');
 	    	that.unloadVideo();
 	    });
 	    videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, function(){
