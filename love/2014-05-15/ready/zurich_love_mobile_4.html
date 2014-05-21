@@ -1,0 +1,40 @@
+<style type="text/css">body{margin:0}#qzad{position:absolute;width:320px;height:150px;overflow:hidden}#qzad .wrapper{position:absolute;z-index:101;width:100%;height:100%;background:url(http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/bg.jpg) no-repeat center center;background-size:100%;pointer-events:none}#qzad .wrapper .copy{margin:17px 0 0 18px;pointer-events:auto}#qzad .wrapper .copy img{display:block}#qzad .wrapper .copy img:first-child{width:198px;margin:0 0 18px}#qzad .wrapper .copy img:last-child{width:198px}#qzad .wrapper .cta{position:absolute;bottom:9px;left:18px;pointer-events:none;display:block;width:115px;height:25px;background-color:#005aab;border-radius:3px}#qzad .wrapper .cta img:first-child{width:83px;height:10px;padding:7px 0 0 8px;float:left}#qzad .wrapper .cta img:last-child{width:8px;padding:6px 0 0 8px}#qzad .wrapper .logo{position:absolute;right:0;bottom:9px;width:61px;height:43px;background:url(http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/logo.jpg) no-repeat center center;background-size:100%;pointer-events:auto}#qzad .video-container{position:absolute;z-index:1;top:0;right:0;bottom:0;left:0;background-color:#000}#qzad .video-container .video{width:100%;height:100%}#qzad .video-container .x{color:#fff;position:absolute;top:0;right:0;font-size:30px;width:30px;height:30px;cursor:pointer;text-align:center;line-height:26px;border:1px solid #fff}</style>
+<div id="qzad">
+	<div class="wrapper">
+		<div class="copy">
+			<img src="http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/copy-1.png">
+			<img src="http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/copy-2.png">
+		</div>
+		<a href="#" target="_blank" class="cta ixtrack" data-ix-category="media" data-ix-label="video played">
+			<img src="http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/cta.png">
+			<img src="http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/arrow.png">
+		</a>
+		<a href="http://www.zurich.com/campaign/cxo/index.htm" target="_blank" class="logo ixtrack" data-ix-category="external" data-ix-label="logo clicked"></a>
+	</div>
+	<div class="video-container">
+		<div class="video">
+			<object class="BrightcoveExperience">
+				<param name="bgcolor" value="#000000" />
+				<param name="width" value="100%" />
+				<param name="height" value="100%" />
+				<param name="playerID" value="2593615286001" />
+				<param name="playerKey" value="AQ~~,AAABnwxttEE~,HpQpfOmVc2v-HDVjX5evwXVa7AvwSOW1" />
+				<param name="isVid" value="true" />
+				<param name="isUI" value="true" />
+				<param name="dynamicStreaming" value="true" />
+				<param name="htmlFallback" value="true" />
+				<param name="includeAPI" value="true" />
+				<param name="templateLoadHandler" value="onTemplateLoad" />
+				<param name="templateReadyHandler" value="onTemplateReady" />
+				<param name="wmode" value="transparent" />
+				<param name="@videoPlayer" value="3550178699001" />
+			</object>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script> 
+<script type="text/javascript" src="http://app.qz.com/js/vendor/jQuery-min.js"></script> 
+<script type="text/javascript" src="http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.48.js"></script> 
+<script type="text/javascript" src="http://app.qz.com/js/frameMessager/QZIX.js"></script> 
+<script id="ix-namer" data-ix-name="zurich_love_mobile_4" src="http://ads.qz.com/js/qzad/qzad-1.0.js" type="text/javascript"></script>
+<script type="text/javascript">var App=function(){var that=this;this.on=function(){$(".cta").on("click",function(e){e.preventDefault(),that.loadVideo()})},this.off=function(){$(".video").empty(),$(".video-container").hide(),$(".cta img:first-child").attr("src","http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/cta.png")},this.loadVideo=function(){brightcove.createExperiences()},this.unloadVideo=function(){$(".video-container").css("z-index",1)},window.onTemplateLoad=function(experienceID){player=brightcove.api.getExperience(experienceID),APIModules=brightcove.api.modules.APIModules},window.onTemplateReady=function(){videoPlayer=player.getModule(APIModules.VIDEO_PLAYER),contentModule=player.getModule(APIModules.CONTENT),videoPlayer.addEventListener(brightcove.api.events.MediaEvent.COMPLETE,function(){$(".cta").off().attr("href","http://www.zurich.com/campaign/cxo/index.htm").css("pointer-events","auto"),$(".cta img:first-child").attr("src","http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/learn-more.png"),that.unloadVideo()}),videoPlayer.addEventListener(brightcove.api.events.MediaEvent.STOP,function(){$(".cta").off().attr("href","http://www.zurich.com/campaign/cxo/index.htm").css("pointer-events","auto"),$(".cta img:first-child").attr("src","http://ads.qz.com/sponsors/zurich/love/2014-05-15/mobile/images/learn-more.png"),that.unloadVideo()}),videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY,function(){$(".video-container").css("z-index",111)}),videoPlayer.getCurrentVideo(function(videoDTO){videoDTO&&(videoDTO.displayName="",contentModule.updateMedia(videoDTO,function(){}))})}};$(document).ready(function(){window.app=new App,QZAD.init({el:document.getElementById("qzad"),frameHeight:150,App:app})});</script>

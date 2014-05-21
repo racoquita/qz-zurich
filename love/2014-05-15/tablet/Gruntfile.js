@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           base: 'http://ads.qz.com/sponsors',
           client: 'zurich',
           campaign: 'love',
-          date: '2014-05-09',
+          date: '2014-05-15',
           unit: 'tablet',
           version: '1',
           internal_scripts: [
