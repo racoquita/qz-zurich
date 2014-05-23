@@ -1,14 +1,16 @@
 body { margin: 0; }
 
-#qzad { position: absolute; width: 100%; height: 480px; min-width: 720px; max-width: 1100px; overflow: hidden; background: url(../images/bg.jpg) no-repeat center center; }
-#qzad .cow { position: absolute; bottom: -20px; right: 160px; height: 480px; }
-#qzad .copy { position: relative; z-index: 11; margin: 84px 0 0 74px; }
-#qzad .copy img { display: block; }
-#qzad .copy img:first-child { margin: 0 0 36px 0; }
-#qzad .cta { display: block; position: relative; z-index: 11; width: 172px; height: 36px; margin: 56px 0 0 74px; background-color: #005aab; border-radius: 3px; }
-#qzad .cta img:first-child { padding: 10px 0 0 10px; float: left; }
-#qzad .cta img:last-child { padding: 8px 0 0 10px; }
-#qzad .logo { position: absolute; right: 0; z-index: 11; bottom: 36px; width: 140px; height: 99px; background: url(../images/logo.jpg) no-repeat center center; }
-#qzad .video-container { position: absolute; z-index: 101; top: 0; right: 0; bottom: 0; left: 0; background-color: black; display: none; }
-#qzad .video-container .video { width: 100%; height: 100%; }
-#qzad .video-container .x { color: white; position: absolute; top: 0; right: 0; font-size: 30px; width: 30px; height: 30px; cursor: pointer; text-align: center; line-height: 26px; border: 1px solid white; }
+#qzad { position: absolute; width: 100%; height: 480px; min-width: 720px; max-width: 1100px; overflow: hidden; background: url(../images/bg.jpg) no-repeat left center; }
+#qzad .loop-wrapper { position: relative; z-index: 1; display: none; width: 1100px; height: 480px; float: left; }
+#qzad .loop-wrapper.show { display: block; }
+#qzad .wrapper { position: absolute; z-index: 11; width: 100%; height: 100%; }
+#qzad .wrapper .copy { position: relative; z-index: 11; margin: 84px 0 0 74px; }
+#qzad .wrapper .copy img { display: block; }
+#qzad .wrapper .copy img:first-child { margin: 0 0 36px 0; }
+#qzad .wrapper .cta { display: block; position: relative; z-index: 11; width: 172px; height: 36px; margin: 56px 0 0 74px; background-color: #005aab; border-radius: 3px; }
+#qzad .wrapper .cta img:first-child { padding: 10px 0 0 10px; float: left; }
+#qzad .wrapper .cta img:last-child { padding: 8px 0 0 10px; }
+#qzad .wrapper .logo { position: absolute; right: 0; z-index: 11; bottom: 36px; width: 140px; height: 99px; background: url(../images/logo.jpg) no-repeat center center; }
+#qzad .wrapper .video-container { position: absolute; z-index: 101; top: 0; right: 0; bottom: 0; left: 0; background-color: black; display: none; }
+#qzad .wrapper .video-container .video { width: 100%; height: 100%; }
+#qzad .wrapper .video-container .x { color: white; position: absolute; top: 0; right: 0; font-size: 30px; width: 30px; height: 30px; cursor: pointer; text-align: center; line-height: 26px; border: 1px solid white; }

@@ -1,5 +1,7 @@
 var App = function() {
 	var that = this;
+	var hasBeenCheckedForLoopingVideo = false;
+	var canLoopVideo = false;
 	var template = '<object class="BrightcoveExperience">\
         <param name="bgcolor" value="#000000" />\
         <param name="width" value="100%" />\
@@ -17,8 +19,18 @@ var App = function() {
         <param name="@videoPlayer" value="3550178699001" />\
         <param name="autoStart" value="false" />\
     </object>';
+    var bgVideo = '<video class="" width="100%" height="100%" loop="true">\
+    	<source src="http://player.vimeo.com/external/96217498.hd.mp4?s=125ebf67b02a9f38b2ec3aa09890123e" type="video/mp4"></video>';
 
 	this.on = function() {
+		if(!hasBeenCheckedForLoopingVideo) {
+			that.checkForLoopingVideo();
+
+			if (canLoopVideo) {
+				that.startLooping();
+			}
+		};
+
 		$('.cta').on('click', function(e){
 			e.preventDefault();
 			that.loadVideo();
@@ -28,7 +40,35 @@ var App = function() {
 		$('.video').empty();
 		$('.video-container').hide();
 		$('.cta img:first-child').attr('src', 'images/cta.png');
+		$('.loop-wrapper').removeClass('show');
+
+		this.stopLooping();
+		hasBeenCheckedForLoopingVideo = false;
+		canLoopVideo = false;
 	}
+	this.checkForLoopingVideo = function () {
+	    hasBeenCheckedForLoopingVideo = true;
+	    var v = document.createElement("video");
+	    if (v.canPlayType( 'video/mp4')) canLoopVideo = true;
+  	}
+  	this.startLooping = function(){
+  		if (canLoopVideo) {
+  			$('.loop-wrapper').append(bgVideo);
+
+  			var video = $('.loop-wrapper').find( 'video' );
+				video[0].addEventListener( 'canplay', function () {
+					video.show();
+					video[0].play();
+					$('.loop-wrapper').addClass('show');
+				});
+  		}
+  	}
+  	this.stopLooping = function() {
+	  	if(canLoopVideo) {
+	  		$('.loop-wrapper').find( 'video' )[0].pause();
+	      	$('.loop-wrapper').find( 'video' ).remove();
+	  	}
+  	}
 	this.loadVideo = function() {
 		$('.video-container').show();
 		$('.video').html(template);

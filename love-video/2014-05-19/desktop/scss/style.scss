@@ -8,80 +8,94 @@ body {
 	min-width: 720px;
 	max-width: 1100px;
 	overflow: hidden;
-	background: url(../images/bg.jpg) no-repeat center center;
+	background: url(../images/bg.jpg) no-repeat left center;
 
-	.cow {
-		position: absolute;
-		bottom: -20px;
-		right: 160px;
-		height: 480px;
-	}
-	.copy {
+	.loop-wrapper {
 		position: relative;
-		z-index: 11;
-		margin: 84px 0 0 74px;
+		z-index: 1;
+		display: none;
+		width: 1100px;
+		height: 480px;
+		float: left;
 
-		img {
+		&.show {
 			display: block;
+		}
+	}
+	.wrapper {
+		position: absolute;
+		z-index: 11;
+		width: 100%;
+		height: 100%;
 
-			&:first-child {
-				margin: 0 0 36px 0;
+		.copy {
+			position: relative;
+			z-index: 11;
+			margin: 84px 0 0 74px;
+
+			img {
+				display: block;
+
+				&:first-child {
+					margin: 0 0 36px 0;
+				}
+			}
+		}
+		.cta {
+			display: block;
+			position: relative;
+			z-index: 11;
+			width: 172px;
+			height: 36px;
+			margin: 56px 0 0 74px;
+			background-color: #005aab;
+			border-radius: 3px;
+
+			img:first-child {
+				padding: 10px 0 0 10px;
+				float: left;
+			}
+			img:last-child {
+				padding: 8px 0 0 10px;
+			}
+		}
+		.logo {
+			position: absolute;
+			right: 0;
+			z-index: 11;
+			bottom: 36px;
+			width: 140px;
+			height: 99px;
+			background: url(../images/logo.jpg) no-repeat center center;
+		}
+		.video-container {
+			position: absolute;
+			z-index: 101;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: black;
+			display: none;
+
+			.video {
+				width: 100%;
+				height: 100%;
+			}
+			.x {
+				color: white;
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 30px;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				text-align: center;
+				line-height: 26px;
+				border: 1px solid white;
 			}
 		}
 	}
-	.cta {
-		display: block;
-		position: relative;
-		z-index: 11;
-		width: 172px;
-		height: 36px;
-		margin: 56px 0 0 74px;
-		background-color: #005aab;
-		border-radius: 3px;
-
-		img:first-child {
-			padding: 10px 0 0 10px;
-			float: left;
-		}
-		img:last-child {
-			padding: 8px 0 0 10px;
-		}
-	}
-	.logo {
-		position: absolute;
-		right: 0;
-		z-index: 11;
-		bottom: 36px;
-		width: 140px;
-		height: 99px;
-		background: url(../images/logo.jpg) no-repeat center center;
-	}
-	.video-container {
-		position: absolute;
-		z-index: 101;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-color: black;
-		display: none;
-
-		.video {
-			width: 100%;
-			height: 100%;
-		}
-		.x {
-			color: white;
-			position: absolute;
-			top: 0;
-			right: 0;
-			font-size: 30px;
-			width: 30px;
-			height: 30px;
-			cursor: pointer;
-			text-align: center;
-			line-height: 26px;
-			border: 1px solid white;
-		}
-	}
+		
 }
