@@ -28,6 +28,8 @@ var App = function() {
 
 			if (canLoopVideo) {
 				that.startLooping();
+			} else {
+				$('#qzad').css('background', 'url(../images/bg-static.jpg) no-repeat left center');
 			}
 		};
 
@@ -64,7 +66,7 @@ var App = function() {
   		}
   	}
   	this.stopLooping = function() {
-	  	if(canLoopVideo) {
+  		if(canLoopVideo) {
 	  		$('.loop-wrapper').find( 'video' )[0].pause();
 	      	$('.loop-wrapper').find( 'video' ).remove();
 	  	}
