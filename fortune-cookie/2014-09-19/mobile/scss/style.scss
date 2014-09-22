@@ -103,7 +103,7 @@ a img {
 	max-width: 600px;
 	overflow: hidden;
 	background-color: white;
-	border: 1px solid #000;
+	border: 1px solid #eee;
 	box-sizing: border-box;
 	.wrapper{
 		position: absolute;
@@ -154,7 +154,7 @@ a img {
 				left: 150px;
 				width: 60px;
 				height: 48px;
-				border: 1px solid #000;
+				
 
 				.fortune {
 					display: none;
@@ -166,7 +166,7 @@ a img {
 					overflow: hidden;
 					background-image: url(../images/roll.png);
 					background-repeat: no-repeat;
-					background-size: auto 27px;
+					background-size: auto 41px;
 					background-position: left center;
 
 					&.show {
@@ -186,6 +186,7 @@ a img {
 					}
 					.unroll {
 						position: absolute;
+						border: 1px solid #000;
 						top: 3px;
 						right: 0;
 						width: 41px;
@@ -222,18 +223,27 @@ a img {
 			display: block;
 		}
 		.content{
-
+			background-color: white;
 			.header{
-
+				margin-top: 47px;
+				width: 554.5px;
 			}
 			.copy{
-
+				margin-top: 25px;
+				width: 416px;
 			}
 			.learn{
-
+				display: block;
+				margin-top: 25px;
+				width: 473px;
+				height: 52.5px;
+				background-color: #00469b;
+				border-radius: 3px;
+				padding: 15px 18.5px;
 			}
 			.another{
-
+				margin-top: 20px;
+				width: 200px;
 			}
 		}
 	}
