@@ -137,14 +137,19 @@ a img {
 				
 		}
 		.cta {
-			display: none;
+			display: block;
 			position: absolute;
 			top: 100px;
 			left: 335px;
 			width: 115.5px;
+			height: 10px;
+			background-image: url(../images/click.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: center center;
 
-			&.show {
-				display: block;
+			&.switch {
+				background-image: url(../images/swipe.png);
 			}
 		}
 		.lockup {

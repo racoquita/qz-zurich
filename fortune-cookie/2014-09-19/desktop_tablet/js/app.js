@@ -1,16 +1,16 @@
 var App = function() {
 	var that = this
 	,	fortunes = [
-		'don’t look before you leap.',
+		'don\'t look before you leap.',
 		'expect the worst. prepare for the best.',
-		'it doesn’t pay to plan ahead.'
+		'it doesn\'t pay to plan ahead.'
 	]
 
 	this.on = function() {
 		$('.cta').on('click', function(e){
 			e.preventDefault();
 
-			$('.cta').removeClass('show');
+			$('.cta').addClass('switch');
 			$('.cookie').addClass('animate');
 
 			setTimeout(function(){
@@ -50,7 +50,7 @@ var App = function() {
 	}
 	this.resetFortune = function() {
 		$('.resizable').resizable({disabled: true});
-		$('.cta').addClass('show');
+		$('.cta').removeClass('switch');
 		$('.fortune').removeClass('show').removeAttr('style');
 		$('.cookie').removeClass('animate');
 		$('.resizable').removeAttr('style');
