@@ -15,25 +15,25 @@ a img {
     	background-position: 0px center;
   	}
   	15% {
-  		background-position: -395px center;
+  		background-position: -272px center;
   	}
   	30% {
-		background-position: -790px center;
+		background-position: -554px center;
   	}
   	45% {
-  		background-position: -1185px center;
+  		background-position: -816px center;
   	}
   	55% {
-  		background-position: -1580px center;
+  		background-position: -1088px center;
   	}
   	75% {
-  		background-position: -1975px center;
+  		background-position: -1360px center;
   	}
   	80% {
-		background-position: -2370px center;
+		background-position: -1632px center;
   	}
   	100% {
-		background-position: -2370px center;
+		background-position: -1904px center;
   	}
 }
 @-o-keyframes open {
@@ -41,51 +41,51 @@ a img {
     	background-position: 0px center;
   	}
   	15% {
-  		background-position: -395px center;
+  		background-position: -272px center;
   	}
   	30% {
-		background-position: -790px center;
+		background-position: -554px center;
   	}
   	45% {
-  		background-position: -1185px center;
+  		background-position: -816px center;
   	}
   	55% {
-  		background-position: -1580px center;
+  		background-position: -1088px center;
   	}
   	75% {
-  		background-position: -1975px center;
+  		background-position: -1360px center;
   	}
   	80% {
-		background-position: -2370px center;
+		background-position: -1632px center;
   	}
   	100% {
-		background-position: -2370px center;
+		background-position: -1904px center;
   	}
 }
 @keyframes open {
-  	0% {
+   	0% {
     	background-position: 0px center;
   	}
   	15% {
-  		background-position: -395px center;
+  		background-position: -272px center;
   	}
   	30% {
-		background-position: -790px center;
+		background-position: -554px center;
   	}
   	45% {
-  		background-position: -1185px center;
+  		background-position: -816px center;
   	}
   	55% {
-  		background-position: -1580px center;
+  		background-position: -1088px center;
   	}
   	75% {
-  		background-position: -1975px center;
+  		background-position: -1360px center;
   	}
   	80% {
-		background-position: -2370px center;
+		background-position: -1632px center;
   	}
   	100% {
-		background-position: -2370px center;
+		background-position: -1904px center;
   	}
 }
 @font-face {
@@ -111,7 +111,7 @@ a img {
 		right: 13px;
 		bottom: 13px;
 		left: 13px;
-		z-index: 11;
+		//z-index: 11;
 		overflow: hidden;
 		&:before{
 			content: '';
@@ -132,14 +132,13 @@ a img {
 	}
 	.cookie{
 		position: absolute;
-		left: 55px;
-		top:100px;
-		width: 395px;
+		left: 12%;
+		top:140px;
+		width: 272px;
 		height: 125px;
-		height: 222px;
+		border: 1px solid #000;
 		background-image: url(../images/cookie.png);
 		background-repeat: no-repeat;
-		border: 1px solid #000;
 		&.animate {
 				-webkit-animation: open .5s steps(1, end) 1;
 					 -o-animation: open .5s steps(1, end) 1;
@@ -186,7 +185,6 @@ a img {
 					}
 					.unroll {
 						position: absolute;
-						border: 1px solid #000;
 						top: 3px;
 						right: 0;
 						width: 41px;
@@ -198,8 +196,8 @@ a img {
 	.cta{
 		display: none;
 		position: absolute;
-		top: 206px;
-		left: 111px;
+		top: 143px;
+		left: 80px;
 		width: 100px;
 		&.show{
 			display: block;
@@ -224,9 +222,12 @@ a img {
 		}
 		.content{
 			background-color: white;
+			padding: 0px 0px 0px 52px;
+			height: 361px;
+			margin: 30px 13px;
 			.header{
 				margin-top: 47px;
-				width: 554.5px;
+				width: 461px;
 			}
 			.copy{
 				margin-top: 25px;
@@ -235,11 +236,11 @@ a img {
 			.learn{
 				display: block;
 				margin-top: 25px;
-				width: 473px;
+				width: 447px;
 				height: 52.5px;
 				background-color: #00469b;
 				border-radius: 3px;
-				padding: 15px 18.5px;
+				padding: 13px 15px;
 			}
 			.another{
 				margin-top: 20px;
