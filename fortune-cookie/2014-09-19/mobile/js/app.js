@@ -19,7 +19,7 @@ var App = function() {
 				$('.fortune').addClass('show');
 				$('.resizable').resizable({
 					minWidth: 60,
-					maxWidth: 305,
+					maxWidth: 210,
 					handles: 'e',
 					stop: function() {
 						that.showModal();
