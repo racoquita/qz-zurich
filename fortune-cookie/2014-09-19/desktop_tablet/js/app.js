@@ -14,20 +14,45 @@ var App = function() {
 			$('.cookie').addClass('animate');
 
 			setTimeout(function(){
+				$('.resizable').resizable({disabled: false});
 				$('.prediction').text(fortunes[Math.floor(Math.random() * 3)]);
 				$('.fortune').addClass('show');
 				$('.resizable').resizable({
 					minWidth: 60,
 					maxWidth: 305,
-					handles: 'e'
+					handles: 'e',
+					stop: function() {
+						that.showModal();
+					}
 				});
 			}, 400);
 		});
+
+		$('.another').on('click', function(e){
+			e.preventDefault();
+			that.resetFortune();
+
+			$('.modal').velocity('fadeOut', {
+				duration: 500
+			});
+		});
 	}
 	this.off = function() {
-		$('.cta').off().addClass('show');
+		$('.cta').off();
+		$('.modal').hide();
+		that.resetFortune();
+	}
+	this.showModal = function() {
+		$('.modal').velocity('fadeIn', {
+			delay: 2000,
+			duration: 500
+		});
+	}
+	this.resetFortune = function() {
+		$('.resizable').resizable({disabled: true});
+		$('.cta').addClass('show');
+		$('.fortune').removeClass('show').removeAttr('style');
 		$('.cookie').removeClass('animate');
-		$('.fortune').removeClass('show');
-		$('.resizable').resizable('destroy');
+		$('.resizable').removeAttr('style');
 	}
 };
