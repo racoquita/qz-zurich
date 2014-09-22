@@ -143,13 +143,21 @@ a img {
 			left: 335px;
 			width: 115.5px;
 			height: 10px;
+			
 			background-image: url(../images/click.png);
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			background-position: center center;
 
 			&.switch {
-				background-image: url(../images/swipe.png);
+				@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+					background-image: url(../images/swipe.png);
+					width: 115.5px;
+					height: 10px;
+				}
+				background-image: url(../images/drag.png);
+				height: 10.5px;
+				width: 270px;
 			}
 		}
 		.lockup {
