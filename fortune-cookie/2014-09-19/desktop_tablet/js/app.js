@@ -7,7 +7,7 @@ var App = function() {
 	]
 
 	this.on = function() {
-		$('.cta').on('click', function(e){
+		$('.cta, .cookie').on('click', function(e){
 			e.preventDefault();
 
 			$('.cta').addClass('switch');
