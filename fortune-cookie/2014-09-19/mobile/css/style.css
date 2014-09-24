@@ -9,7 +9,7 @@ a img { width: 100%; }
 #qzad { position: absolute; width: 100%; height: 430px; min-width: 320px; max-width: 600px; overflow: hidden; background-color: white; border: 1px solid #eee; box-sizing: border-box; }
 #qzad .wrapper { position: absolute; top: 13px; right: 13px; bottom: 13px; left: 13px; overflow: hidden; }
 #qzad .wrapper:before { content: ''; background-image: url(../images/fade.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; display: block; width: 100%; height: 100%; }
-#qzad .help { position: absolute; top: 20px; right: 3.33333333333%; width: 245px; }
+#qzad .help { position: absolute; top: 21px; right: 3.5%; width: 245px; }
 #qzad .cookie { position: absolute; left: 157px; top: 140px; width: 272px; height: 125px; background-image: url(../images/cookie.png); background-repeat: no-repeat; }
 @media (max-width: 500px) { #qzad .cookie { left: 0; } }
 #qzad .cookie.animate { -webkit-animation: open 0.5s steps(1, end) 1; -o-animation: open 0.5s steps(1, end) 1; animation: open 0.5s steps(1, end) 1; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards; animation-fill-mode: forwards; }
@@ -20,7 +20,7 @@ a img { width: 100%; }
 #qzad .cookie .resizable .fortune .unroll { position: absolute; top: 3px; right: 0; width: 41px; height: 33px; }
 #qzad .cta { display: block; position: absolute; top: 143px; left: 80px; width: 99px; height: 7px; background-image: url(../images/tap.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; }
 #qzad .cta.switch { width: 181.5px; left: 57px; background-image: url(../images/swipe.png); }
-#qzad .lockup { position: absolute; right: 0; bottom: 20px; width: 277px; }
+#qzad .lockup { position: absolute; right: 0; bottom: 20px; width: 275px; }
 #qzad .modal { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.35); }
 #qzad .modal.show { display: block; }
 #qzad .modal .content { background-color: white; padding: 0px 0px 0px 18.5px; height: 361px; margin: 30px 13px; border-radius: 5px; }
