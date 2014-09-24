@@ -23,6 +23,9 @@ var App = function() {
 					handles: 'e',
 					stop: function() {
 						that.showModal();
+					},
+					start: function( event, ui ) {
+						$('.cta').hide();
 					}
 				});
 			}, 400);
@@ -51,6 +54,7 @@ var App = function() {
 	}
 	this.resetFortune = function() {
 		$('.resizable').resizable({disabled: true});
+		$('.cta').show();
 		$('.cta').removeClass('switch');
 		$('.fortune').removeClass('show').removeAttr('style');
 		$('.cookie').removeClass('animate');
