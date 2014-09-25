@@ -9,7 +9,7 @@ a img { width: 100%; }
 #qzad { position: absolute; width: 100%; height: 430px; min-width: 320px; max-width: 600px; overflow: hidden; background-color: white; border: 1px solid #eee; box-sizing: border-box; }
 #qzad .wrapper { position: absolute; top: 13px; right: 13px; bottom: 13px; left: 13px; overflow: hidden; }
 #qzad .wrapper:before { content: ''; background-image: url(../images/fade.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; display: block; width: 100%; height: 100%; }
-#qzad .help { position: absolute; top: 21px; right: 3.5%; width: 245px; }
+#qzad .help { position: absolute; top: 21px; right: 21px; width: 245px; }
 #qzad .cookie { position: absolute; left: 157px; top: 140px; width: 272px; height: 125px; background-image: url(../images/cookie.png); background-repeat: no-repeat; }
 @media (max-width: 500px) { #qzad .cookie { left: 0; } }
 #qzad .cookie.animate { -webkit-animation: open 0.5s steps(1, end) 1; -o-animation: open 0.5s steps(1, end) 1; animation: open 0.5s steps(1, end) 1; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards; animation-fill-mode: forwards; }
