@@ -18,7 +18,7 @@ var App = function() {
 				$('.prediction').text(fortunes[Math.floor(Math.random() * 3)]);
 				$('.fortune').addClass('show');
 				$('.resizable').resizable({
-					minWidth: 60,
+					minWidth: 100,
 					maxWidth: 180,
 					handles: 'e',
 					stop: function() {
