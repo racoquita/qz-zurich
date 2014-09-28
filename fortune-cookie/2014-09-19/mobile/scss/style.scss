@@ -59,6 +59,13 @@ a img {
 		right: 21px;
 		width: 245px;
 	}
+	.cookie-container{
+		position:absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom:0;
+	}
 	.cookie{
 		position: absolute;
 		left: 157px;
@@ -85,7 +92,7 @@ a img {
 				top: 42px;
 				left: 100px;
 				width: 60px;
-				height: 33px;
+				height: 35px;
 				
 				.fortune {
 					display: none;
@@ -97,8 +104,8 @@ a img {
 					overflow: hidden;
 					background-image: url(../images/roll.png);
 					background-repeat: no-repeat;
-					background-size: auto 33px;
-					background-position: left center;
+					background-size: auto 35px;
+					background-position: left top;
 
 					&.show {
 						display: block;

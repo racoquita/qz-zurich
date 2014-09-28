@@ -10,11 +10,12 @@ a img { width: 100%; }
 #qzad .wrapper { position: absolute; top: 13px; right: 13px; bottom: 13px; left: 13px; overflow: hidden; }
 #qzad .wrapper:before { content: ''; background-image: url(../images/fade.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; display: block; width: 100%; height: 100%; }
 #qzad .help { position: absolute; top: 21px; right: 21px; width: 245px; }
+#qzad .cookie-container { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 #qzad .cookie { position: absolute; left: 157px; top: 140px; width: 272px; height: 125px; background-image: url(../images/cookie.png); background-repeat: no-repeat; }
 @media (max-width: 500px) { #qzad .cookie { left: 0; } }
 #qzad .cookie.animate { -webkit-animation: open 0.5s steps(1, end) 1; -o-animation: open 0.5s steps(1, end) 1; animation: open 0.5s steps(1, end) 1; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards; animation-fill-mode: forwards; }
-#qzad .cookie .resizable { position: absolute; top: 42px; left: 100px; width: 60px; height: 33px; }
-#qzad .cookie .resizable .fortune { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; background-image: url(../images/roll.png); background-repeat: no-repeat; background-size: auto 33px; background-position: left center; }
+#qzad .cookie .resizable { position: absolute; top: 42px; left: 100px; width: 60px; height: 35px; }
+#qzad .cookie .resizable .fortune { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; background-image: url(../images/roll.png); background-repeat: no-repeat; background-size: auto 35px; background-position: left top; }
 #qzad .cookie .resizable .fortune.show { display: block; }
 #qzad .cookie .resizable .fortune .prediction { display: block; width: 100px; padding-top: 8px; padding-left: 28px; font-family: 'fltlight'; font-size: 9px; text-align: center; text-transform: uppercase; color: #010101; }
 #qzad .cookie .resizable .fortune .unroll { position: absolute; top: 3px; right: 0; width: 41px; height: 33px; }
