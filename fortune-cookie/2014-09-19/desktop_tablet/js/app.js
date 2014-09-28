@@ -7,7 +7,7 @@ var App = function() {
 	]
 
 	this.on = function() {
-		$('.cta, .cookie').on('click', function(e){
+		$('.cta, .cookie-container').on('click', function(e){
 			e.preventDefault();
 
 			$('.cta').addClass('switch');
@@ -47,7 +47,7 @@ var App = function() {
 	}
 	this.showModal = function() {
 		$('.modal').velocity('fadeIn', {
-			delay: 2000,
+			delay: 2750,
 			duration: 500
 		});
 	}
