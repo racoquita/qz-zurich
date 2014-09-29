@@ -1,5 +1,6 @@
 var App = function() {
 	var that = this
+	,	hasTouch = 'ontouchstart' in document.documentElement
 	,	fortunes = [
 		'don\'t look before you leap.',
 		'expect the worst. prepare for the best.',
@@ -7,7 +8,9 @@ var App = function() {
 	]
 
 	this.on = function() {
-		$('.cta, .cookie-container').on('click', function(e){
+		if(hasTouch) $('.cta').addClass('hasTouch');
+
+		$('.cta, .cookie').on('click', function(e){
 			e.preventDefault();
 
 			$('.cta').addClass('switch');
@@ -43,6 +46,7 @@ var App = function() {
 	this.off = function() {
 		$('.cta').off();
 		$('.modal').hide();
+		$('.cta').removeClass('hasTouch');
 		that.resetFortune();
 	}
 	this.showModal = function() {

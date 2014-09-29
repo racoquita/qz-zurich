@@ -165,6 +165,11 @@ a img {
 			background-size: 100% 100%;
 			background-position: center center;
 
+			&.hasTouch {
+				width: 103.5px;
+				background-image: url(../images/tap.png);
+			}
+
 			&.switch {
 				@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 					background-image: url(../images/swipe.png);
