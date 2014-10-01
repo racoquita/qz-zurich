@@ -10,7 +10,7 @@ var App = function() {
 	this.on = function() {
 		if(hasTouch) $('.cta').addClass('hasTouch');
 
-		$('.cta, .cookie').on('click', function(e){
+		$('.cta, .cookie-container').on('click', function(e){
 			e.preventDefault();
 
 			$('.cta').addClass('switch');
@@ -20,6 +20,7 @@ var App = function() {
 				$('.resizable').resizable({disabled: false});
 				$('.prediction').text(fortunes[Math.floor(Math.random() * 3)]);
 				$('.fortune').addClass('show');
+				$('.handle').addClass('show');
 				$('.resizable').resizable({
 					minWidth: 100,
 					maxWidth: 305,
@@ -31,7 +32,7 @@ var App = function() {
 						$('.cta').hide();
 					}
 				});
-			}, 400);
+			}, 600);
 		});
 
 		$('.another').on('click', function(e){

@@ -107,26 +107,26 @@ a img {
 			@include breakpoint(1200) {
 				left: 2.34%;
 			}
+
 			.resizable {
 				position: absolute;
-				top: 80px;
-				left: 150px;
+				top: 71px;
+				left: 130px;
 				width: 60px;
-				height: 48px;
-				
+				height: 56px;
 
 				.fortune {
 					display: none;
 					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
+					top: -50px;
+					right: -26px;
+					bottom: -50px;
+					left: -50px;
 					overflow: hidden;
 					background-image: url(../images/roll.png);
 					background-repeat: no-repeat;
-					background-size: auto 41px;
-					background-position: left center;
+					background-size: auto 56px;
+					background-position: 53px center;
 
 					&.show {
 						display: block;
@@ -136,7 +136,8 @@ a img {
 						display: inline-block;
 						width: 230px;
 						line-height: 56px;
-						padding-left: 28px;
+						padding-left: 80px;
+						padding-top: 53px;
 						font-family: 'fltlight';
 						font-size: 12px;
 						text-align: center;
@@ -145,10 +146,10 @@ a img {
 					}
 					.unroll {
 						position: absolute;
-						top: 3px;
+						top: 53px;
 						right: 0;
 						width: 41px;
-						height: 41px;
+						height: 56px;
 					}
 				}
 			}

@@ -17,11 +17,11 @@ a img { width: 100%; }
 #qzad .wrapper .cookie.animate { -webkit-animation: open 0.5s steps(1, end) 1; -o-animation: open 0.5s steps(1, end) 1; animation: open 0.5s steps(1, end) 1; -webkit-animation-fill-mode: forwards; -o-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 @media (max-width: 1400px) { #qzad .wrapper .cookie { left: 12.34%; } }
 @media (max-width: 1200px) { #qzad .wrapper .cookie { left: 2.34%; } }
-#qzad .wrapper .cookie .resizable { position: absolute; top: 80px; left: 150px; width: 60px; height: 48px; }
-#qzad .wrapper .cookie .resizable .fortune { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; background-image: url(../images/roll.png); background-repeat: no-repeat; background-size: auto 41px; background-position: left center; }
+#qzad .wrapper .cookie .resizable { position: absolute; top: 71px; left: 130px; width: 60px; height: 56px; }
+#qzad .wrapper .cookie .resizable .fortune { display: none; position: absolute; top: -50px; right: -26px; bottom: -50px; left: -50px; overflow: hidden; background-image: url(../images/roll.png); background-repeat: no-repeat; background-size: auto 56px; background-position: 53px center; }
 #qzad .wrapper .cookie .resizable .fortune.show { display: block; }
-#qzad .wrapper .cookie .resizable .fortune .prediction { white-space: nowrap; display: inline-block; width: 230px; line-height: 56px; padding-left: 28px; font-family: 'fltlight'; font-size: 12px; text-align: center; text-transform: uppercase; color: #010101; }
-#qzad .wrapper .cookie .resizable .fortune .unroll { position: absolute; top: 3px; right: 0; width: 41px; height: 41px; }
+#qzad .wrapper .cookie .resizable .fortune .prediction { white-space: nowrap; display: inline-block; width: 230px; line-height: 56px; padding-left: 80px; padding-top: 53px; font-family: 'fltlight'; font-size: 12px; text-align: center; text-transform: uppercase; color: #010101; }
+#qzad .wrapper .cookie .resizable .fortune .unroll { position: absolute; top: 53px; right: 0; width: 41px; height: 56px; }
 #qzad .wrapper .cta { display: block; position: absolute; top: 100px; left: 335px; width: 115.5px; height: 10px; background-image: url(../images/click.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; }
 #qzad .wrapper .cta.hasTouch { width: 103.5px; background-image: url(../images/tap.png); }
 #qzad .wrapper .cta.switch { background-image: url(../images/drag.png); height: 10.5px; width: 270px; }
