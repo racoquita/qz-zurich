@@ -22,7 +22,7 @@ var App = function() {
 					maxWidth: 180,
 					handles: 'e',
 					stop: function() {
-						that.showModal();
+						//that.showModal();
 					},
 					start: function( event, ui ) {
 						$('.cta').hide();
