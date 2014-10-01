@@ -38,7 +38,9 @@ a img {
 	max-width: 1600px;
 	overflow: hidden;
 	background-color: white;
-	border: 1px solid #eee;
+	border: 1px solid #cccccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
 	.wrapper {
